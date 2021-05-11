@@ -1,6 +1,8 @@
 #!/bin/sh
 
 find . -name '.DS_Store' -type f -ls -delete
+rm -rf build
+rm -rf docs
 python freeze.py
 mv build docs
 
