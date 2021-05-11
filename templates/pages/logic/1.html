@@ -1,0 +1,23 @@
+{% extends "layout.html" %} 
+{% block content %}
+
+#### 中世哲学史#{{page_num}} 神父神学
+<div class="cate_list" style="margin:5px 0px 5px 0px;"> [ 中世哲学 ] </div>
+1111111
+## ここにMarkdownの記述で本文を書いていく  
+
+　```
+画像を使うときは<img>タグを使う
+　```
+
+1. aa
+1. bb
+
+
+<div align="right">
+    First post &nbsp; 0000/03/19 
+    <br>
+    Last updated&nbsp; 2012/03/19
+</div>
+<!--  -->
+<a href="{{url_for('trans_medieval', page_num='2')}}">次へ &gt;&gt;</a> │ <a href="#top">一番上に戻る</a> {% endblock %}

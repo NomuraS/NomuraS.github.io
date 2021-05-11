@@ -1,0 +1,6 @@
+1+1
+:load /Volumes/External_SSD_50/Dropbox/code/scala/Logic/fromGithub/hello.scala
+Formula
+exit
+:load /Users/nomura/IdeaProjects/modal_logic_test/src/main/scala/basics/Formula.scala
+exit
