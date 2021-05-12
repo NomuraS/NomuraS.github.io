@@ -6,9 +6,8 @@ rm -rf docs
 python freeze.py
 mv build docs
 
+echo "--------------------- update github----------------------"
 today=$(date "+%Y%m%d")
-echo "update-heroku"
-echo "git"
 git add .
 git commit -m "update_${today}"
 # git remote add origin git@github.com:NomuraS/NomuraS.github.io.git
