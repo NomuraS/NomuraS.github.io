@@ -273,16 +273,16 @@ def trans_phenomenology(page_num):
         reference=REFERENCE,
         )
 
-# existential
-@app.route('/pages/existential/<page_num>.html', methods=['GET'])
-def trans_existential(page_num):
-    return flask.render_template(
-        '/pages/existential/'+page_num+'.html', 
-        title= '実存主義',
-        prev_page= common_html + "/pages/existential/%s.html" % (int(page_num)-1),
-        next_page= common_html + "/pages/existential/%s.html" % (int(page_num)+1),
-        reference=REFERENCE,
-        )
+# # existential
+# @app.route('/pages/existential/<page_num>.html', methods=['GET'])
+# def trans_existential(page_num):
+#     return flask.render_template(
+#         '/pages/existential/'+page_num+'.html', 
+#         title= '実存主義',
+#         prev_page= common_html + "/pages/existential/%s.html" % (int(page_num)-1),
+#         next_page= common_html + "/pages/existential/%s.html" % (int(page_num)+1),
+#         reference=REFERENCE,
+#         )
 
 # fr
 @app.route('/pages/fr/<page_num>.html', methods=['GET'])
@@ -388,14 +388,14 @@ def trans_east(page_num):
         reference=REFERENCE,
         )
 
-# other
-@app.route('/pages/other/<page_num>.html', methods=['GET'])
-def trans_other(page_num):
+# others
+@app.route('/pages/others/<page_num>.html', methods=['GET'])
+def trans_others(page_num):
     return flask.render_template(
-        '/pages/other/'+page_num+'.html', 
-        title= 'other',
-        prev_page= common_html + "/pages/other/%s.html" % (int(page_num)-1),
-        next_page= common_html + "/pages/other/%s.html" % (int(page_num)+1),
+        '/pages/others/'+page_num+'.html', 
+        title= 'others',
+        prev_page= common_html + "/pages/others/%s.html" % (int(page_num)-1),
+        next_page= common_html + "/pages/others/%s.html" % (int(page_num)+1),
         reference=REFERENCE,
         )
     
