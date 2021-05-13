@@ -3,6 +3,21 @@
 }
 */
 
+
+.mytable{
+  border-collapse:collapse;
+  margin:0 auto;
+  width: initial !important;
+}
+.mytd,.myth{
+  border:1px solid #ccc;
+  padding:5px;
+}
+.myth{
+  background:#EFEFEF;
+}
+
+
 .red{
   color:red;
 }
