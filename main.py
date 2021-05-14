@@ -192,9 +192,8 @@ test= {
 
 app = flask.Flask(__name__)
 
-# common_html = "http://127.0.0.1:5000"
-common_html = "https://nomuras.github.io"
-# common_html = "https://tishiki-no-tsumiki.herokuapp.com"
+common_html = "http://127.0.0.1:5000"
+# common_html = "https://nomuras.github.io"
 
 @app.route('/')
 def index():

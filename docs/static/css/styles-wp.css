@@ -9089,10 +9089,13 @@ ul.pagination li {
 }
 
 table {
-  background: #ffffff;
+    border-collapse:collapse;
+  margin:0 auto;
+  width: initial !important;
+/*  background: #ffffff;
   border: solid 1px #DDDDDD;
   margin-bottom: 1.25rem;
-  table-layout: auto;
+  table-layout: auto;*/
 }
 
 table caption {
@@ -16760,7 +16763,7 @@ textarea {
 }
 
 .post .entry table {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .post input[type="password"] {
