@@ -186,15 +186,10 @@ REFERENCE={
 'add1'          :"ディオゲネス・ラエルティオス・加来彰俊 (翻訳) (著)、『ギリシア哲学者列伝（上）』、岩波書店、1984",
 }
 
-test= {
-    'aaa':"testaa",
-    'bbb':"testbbb"
-}
-
 app = flask.Flask(__name__)
 
-common_html = "http://127.0.0.1:5000"
-# common_html = "https://nomuras.github.io"
+# common_html = "http://127.0.0.1:5000"
+common_html = "https://nomuras.github.io"
 
 @app.route('/')
 def index():

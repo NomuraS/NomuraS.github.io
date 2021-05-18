@@ -114,8 +114,8 @@ body{
                         
 
 <h5> 
-<a href="http://127.0.0.1:5000/pages/en/11.html">&lt;&lt; 前へ</a> │
-<a href="http://127.0.0.1:5000/pages/en/13.html"> 次へ &gt;&gt;</a> 
+<a href="https://nomuras.github.io/pages/en/11.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/en/13.html"> 次へ &gt;&gt;</a> 
 </h5>
 
 # 前期ウィトゲンシュタイン「論理哲学論考」#4-1 論理空間における真理操作
@@ -238,50 +238,50 @@ Fは、野矢氏[12, p.94]の解説によると、いかなる事態も属して
 <table class="mytable">
 <thead>
   <tr>
-    <td class="mytd"></td>
-    <td class="mytd">$P$</td>
-    <td class="mytd">$Q$</td>
-    <td class="mytd">← 要素命題</td>
-    <td class="mytd" rowspan="5"></td>
-    <td class="mytd"></td>
-    <td class="mytd">$P\vee Q$</td>
-    <td class="mytd">← $\vee$は真理関数</td>
-    <td class="mytd"></td>
+    <th class="myth"></th>
+    <th class="myth">$P$</th>
+    <th class="myth">$Q$</th>
+    <th class="myth">← 要素命題</th>
+    <th class="myth" rowspan="5"></th>
+    <th class="myth"></th>
+    <th class="myth">$P\vee Q$</th>
+    <th class="myth">← $\vee$は真理関数</th>
+    <th class="myth"></th>
   </tr>
   <tr>
-    <td class="mytd">真理可能性1</td>
-    <td class="mytd">T</td>
-    <td class="mytd">T</td>
-    <td class="mytd" rowspan="4">← 論理空間</td>
-    <td class="mytd">真理条件1</td>
-    <td class="mytd">T</td>
-    <td class="mytd">← 真理根拠1</td>
-    <td class="mytd" rowspan="3">真理領域</td>
+    <th class="myth">真理可能性1</th>
+    <th class="myth">T</th>
+    <th class="myth">T</th>
+    <th class="myth" rowspan="4">← 論理空間</th>
+    <th class="myth">真理条件1</th>
+    <th class="myth">T</th>
+    <th class="myth">← 真理根拠1</th>
+    <th class="myth" rowspan="3">真理領域</th>
   </tr>
   <tr>
-    <td class="mytd">真理可能性2</td>
-    <td class="mytd">F</td>
-    <td class="mytd">T</td>
-    <td class="mytd">真理条件2</td>
-    <td class="mytd">T</td>
-    <td class="mytd">← 真理根拠2</td>
+    <th class="myth">真理可能性2</th>
+    <th class="myth">F</th>
+    <th class="myth">T</th>
+    <th class="myth">真理条件2</th>
+    <th class="myth">T</th>
+    <th class="myth">← 真理根拠2</th>
   </tr>
   <tr>
-    <td class="mytd">真理可能性3</td>
-    <td class="mytd">T</td>
-    <td class="mytd">F</td>
-    <td class="mytd">真理条件3</td>
-    <td class="mytd">T</td>
-    <td class="mytd">← 真理根拠3</td>
+    <th class="myth">真理可能性3</th>
+    <th class="myth">T</th>
+    <th class="myth">F</th>
+    <th class="myth">真理条件3</th>
+    <th class="myth">T</th>
+    <th class="myth">← 真理根拠3</th>
   </tr>
   <tr>
-    <td class="mytd">真理可能性4</td>
-    <td class="mytd">F</td>
-    <td class="mytd">F</td>
-    <td class="mytd">真理条件4</td>
-    <td class="mytd">F</td>
-    <td class="mytd"></td>
-    <td class="mytd"></td>
+    <th class="myth">真理可能性4</th>
+    <th class="myth">F</th>
+    <th class="myth">F</th>
+    <th class="myth">真理条件4</th>
+    <th class="myth">F</th>
+    <th class="myth"></th>
+    <th class="myth"></th>
   </tr>
 </thead>
 </table>
@@ -305,36 +305,47 @@ $P\wedge Q$の真理条件を横書きで記すと(TTTF)となり、左から真
 具体的に、基本的な4つの論理定項がどのような真理操作を行うか見てみる。
 
 
-### 論理定項「$\neg$ 」の役割
+##### 論理定項「$\neg$ 」の役割
 それぞれの要素命題は、それぞれが真となる領域(真理領域)を持つ、例えば、要素命題$P$の場合、$P$は、可能な事態を二つ持つため、(TF)という真理可能性群を持つ。
 同時に(TF)は$P$の真理条件群である。
 そして、この諸真理条件群を反転させるのが、論理定項「$\neg$ 」である。
 下の表を見れば真理条件群が反転しているのが分かる。
 
-(論理空間)
+<!-- (論理空間) -->
 
-　　　　　　　　　　　　P 　　　　　P 　　　　$\neg P$
+<table class="mytable">
+<tbody>
+<tr>
+    <th class="myth"></th>
+    <th class="myth">$P$</th>
+    <th class="myth">$\neg P$</th>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性2</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+  </tr>
+</tbody>
+</table>
+
+
+<!-- 　　　　　　　　　　　　P 　　　　　P 　　　　$\neg P$
 ―――――――――――――――――――――――――
-真理可能性１　　　 T　　　　　T　　　　　　F　　真理条件１
-真理可能性２　　　 F　　　　　F　　　　　　T　　真理条件２
+　　　 T　　　　　T　　　　　　F　　真理条件１
+真理可能性２　　　 F　　　　　F　　　　　　T　　真理条件２ -->
 
 Wの表記法によると、(FT)($P$)と表記されこれが$\neg P$を意味する。
 また、二重否定($\neg\neg P$)は真理領域の操作を二度行うので(TF)($P$)となり、$P$と等しくなることが分かる。
 
-
-### 論理定項「\vee 」と「＆」の役割
-また論理定項「\vee 」と「＆」はどのような真理領域の操作を行うのだろうか。
-「\vee 」は二つの要素命題の真理領域を合併する。
-下の表をみると、「\vee 」によってPとQの真理根拠を合わせられたものであることが分かる。
-またどちらも真理根拠を持たない(4)においてはFにとどまっており、最終的に(TTTF)という真理条件群を形成している。
+##### 論理定項「$\vee,\wedge,\to$ 」の役割
+下の表は、「$\vee,\wedge,\to$ を網羅的に定義したものである。
+最終的に(TTTF)という真理条件群を形成している。
 これはWの記号法で記すと、(TTTF)($P, Q$)となる。
-これが、真理関数$P\wedge Q$を意味する。
-
-
-「＆」が行う操作は、二つの要素命題がそれぞれもつ真理領域において共通する真理根拠を抽出するというものである。
-下の図において、$P\wedge Q$という命題が、(1)の$P$と$Q$の共通する真理根拠のみをTとして、それ以外はFとしているのが分かる。
-また、Wの表記法では、(TFFF)($P, Q$)と表される。
-これが真理関数$P\wedge Q$を意味する。
 
 
 <table class="mytable">
@@ -345,85 +356,38 @@ Wの表記法によると、(FT)($P$)と表記されこれが$\neg P$を意味�
     <th class="myth">$Q$</th>
     <th class="myth">$P\vee Q$</th>
     <th class="myth">$P\wedge Q$</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="mytd">(1)</td>
-    <td class="mytd">T</td>
-    <td class="mytd">T</td>
-    <td class="mytd">T</td>
-    <td class="mytd">T</td>
-  </tr>
-  <tr>
-    <td class="mytd">(2)</td>
-    <td class="mytd">F</td>
-    <td class="mytd">T</td>
-    <td class="mytd">T</td>
-    <td class="mytd">F</td>
-  </tr>
-  <tr>
-    <td class="mytd">(3)</td>
-    <td class="mytd">T</td>
-    <td class="mytd">F</td>
-    <td class="mytd">T</td>
-    <td class="mytd">F</td>
-  </tr>
-  <tr>
-    <td class="mytd">(4)</td>
-    <td class="mytd">F</td>
-    <td class="mytd">F</td>
-    <td class="mytd">F</td>
-    <td class="mytd">F</td>
-  </tr>
-</tbody>
-</table>
-
-### 論理定項「$\to $」の役割
-論理定項「→」は、推論関係を表す論理定項である。
-では、正しい推論と誤った推論はどのようなものか(5.12)。
-$P$から$Q$が導かれる場合、$Q$の真理領域には必ず$P$の全ての真理根拠を含む(5.122)。
-例えば、($P\wedge Q$)の真理領域は(TFFF)であった、そして($P\wedge Q$)の真理領域は(TTTF)である。
-つまり、($P\wedge Q$)の真理根拠は($P\wedge Q$)に含まれているため(真理条件１のTが共通している真理根拠)、($P\wedge Q$)→($P\wedge Q$)は正しい推論であると言える。
-また、逆に、($P\wedge Q$)から($P\wedge Q$)を導いた場合正しい推論と言うことはできない。
-なぜなら、($P\wedge Q$)の真理領域(TTTF)が($P\wedge Q$)の真理領域(TFFF)に含まれていないからである(２、３の真理条件が$P\wedge Q$に含まれていない)。
-このように、正しい推論は、前者の真理領域が、後者の真理領域に内包されていなければならない。
-
-
-このように推論の真偽とは、前者の真理領域を後者が内包しているかどうかである。
-また逆に$Q$に含まれている真理領域を$Q$の真理領域に含まれていない場合、それは誤った推論となり、必ず偽となる。
-これを真理表で表すと下のようになり、また、Ｗの記号法によると(TTFT)($P, Q$)となる。
-
-<table class="mytable">
-<thead>
-  <tr>
-    <th class="myth"></th>
-    <th class="myth">$P$</th>
-    <th class="myth">$Q$</th>
     <th class="myth">$P\to Q$</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="mytd">(1)</td>
+    <td class="mytd">真理可能性(1)</td>
     <td class="mytd">T</td>
     <td class="mytd">T</td>
     <td class="mytd">T</td>
-  </tr>
-  <tr>
-    <td class="mytd">(2)</td>
-    <td class="mytd">F</td>
     <td class="mytd">T</td>
     <td class="mytd">T</td>
   </tr>
   <tr>
-    <td class="mytd">(3)</td>
+    <td class="mytd">真理可能性(2)</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性(3)</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
     <td class="mytd">T</td>
     <td class="mytd">F</td>
     <td class="mytd">F</td>
   </tr>
   <tr>
-    <td class="mytd">(4)</td>
+    <td class="mytd">真理可能性(4)</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
     <td class="mytd">F</td>
     <td class="mytd">F</td>
     <td class="mytd">T</td>
@@ -431,32 +395,46 @@ $P$から$Q$が導かれる場合、$Q$の真理領域には必ず$P$の全て�
 </tbody>
 </table>
 
-なぜ(3)が誤った推論なのか。
-例えば、自然数nに対し$P$を(n＞4)、$Q$を(n＞2)とし、$P→Q$という命題を考えてみる。
+<!-- 
+##### 論理定項「$\to $」の役割
+論理定項「$\to$ 」は、推論関係を表す論理定項である。
+では、正しい推論と誤った推論はどのようなものか(5.12)。
+$P$から$Q$が導かれる場合、$Q$の真理領域には必ず$P$の全ての真理根拠を含む(5.122)。
+例えば、($P\wedge Q$)の真理領域は(TFFF)であった、そして($P\wedge Q$)の真理領域は(TTTF)である。
+つまり、($P\wedge Q$)の真理根拠は($P\vee Q$)に含まれているため(真理条件１のTが共通している真理根拠)、($P\wedge Q)\to (P\vee Q$)は正しい推論であると言える。このように推論の真偽とは、前者の真理領域を後者が内包しているかどうかである。
+
+では、なぜ(3)が誤った推論なのか。
+例えば、自然数nに対し$P$を(n＞4)、$Q$を(n＞2)とし、$P\to Q$という命題を考えてみる。
 そうすると、$P$の真理領域は「5以上」である。
 また、$Q$の真理領域は、「3以上」となる。
 そして、正しい推論とは$Q$の真理領域に$P$の真理領域が含まれていることであった。
 それぞれの事態を検証してみる：
 
-1. の場合は､P[T]→Q[T]であるため、P[T]の真理領域は「5以上」の整数となり、Q[F]の真理領域は「3以上」の整数となる。
-そして、Q[T]の真理領域をかならず、P[T]の真理領域は含んでいるため、この推論は正しいものと言える。
-
-2. の場合は､P[F]→Q[T]であるため、P[F]はの真理領域は｢4以下｣の整数となり、Q[T]の真理領域は｢3以上｣の整数となる。
+1. の(P=Q=T)という場合は､であるため、Pの真理領域は「5以上」の整数となり、Qの真理領域は「3以上」の整数となる。
+そして、Qの真理領域をかならず、Pの真理領域は含んでいるため、この推論は正しいものと言える。
+2. の(P=F, Q=T)という場合は､P[F]はの真理領域は｢4以下｣の整数となり、Q[T]の真理領域は｢3以上｣の整数となる。
 そして、整数４をP[F]の真理根拠とすることによって、Q[T]の真理領域にP[F]の真理根拠を含ませることができるため、この推論は正しいものと言える。
-
-3. の場合は､P[F]→Q[F]であるため、P[F]の真理領域は｢4以下｣の整数となり、Q[F]の真理領域は｢2以下｣の整数となる。
-そして、整数１をP[F]の真理根拠とすることによって、Q[F]の真理領域にP[F]の真理根拠を含ませることができるため、この推論は正しいものと言える。
-
-3. 問題の(3)の場合は､P[T]→Q[F]であるため、P[T]の真理領域は｢5以上｣の整数となり、Q[F]の真理領域に｢2以下｣の整数となる。
+3. の(P=Q=F)という場合は､Pの真理領域は｢4以下｣の整数となり、Qの真理領域は｢2以下｣の整数となる。
+そして、整数１をPの真理根拠とすることによって、Qの真理領域にPの真理根拠を含ませることができるため、この推論は正しいものと言える。
+4. の(P=F, Q=T)という場合は､P[T]の真理領域は｢5以上｣の整数となり、Q[F]の真理領域に｢2以下｣の整数となる。
 しかし、この条件を満たす整数(真理根拠)は存在しない。
-
-
 つまりどうやっても、Q[F]の真理根拠をP[T]の真理領域に含ませることはできない。
 そのため、誤った推論であるといえる。
 この$P\to Q$の関係は現在では含意<a class="s">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>と呼ばれている。
 
-## まとめ
-上で見た論理定項の真理条件の表は、今では`真理値表(truth table)`と呼ばれ論理学の授業ではじめに習うものであるが、それはこの『論考』における哲学的な考察が基礎の一つになっている。また、$\vee$を表ではなく場合分けで定義するならば、$\vee:\lbrace{T,F\rbrace}\times \lbrace{T,F\rbrace}\to \lbrace{T,F\rbrace}$は例えば次のように定義できる。
+
+##### 真理値表 
+ -->
+
+この論理定項の真理条件の表は、今では`真理値表(truth table)`と呼ばれ論理学の授業ではじめに習うもので、それはこの『論考』における哲学的な考察が基礎の一つになっている。
+
+<!-- 
+
+また、4つの論理定項を表ではなく等号で定義しておこう。
+論理定項$ \vee, \wedge, \to$は、それぞれ$\lbrace{T,F\rbrace}\times \lbrace{T,F\rbrace}\to \lbrace{T,F\rbrace}$ 
+という型、$\neg$は
+$\lbrace{T,F\rbrace}\to \lbrace{T,F\rbrace}$
+という型を持ち、以下のように定義される。
 
 $
 \vee (X,Y)::=
@@ -466,21 +444,39 @@ T&  \text{otherwise}
 \end{cases}
 $
 
+$
+\wedge (X,Y)::=
+\begin{cases}
+T & \text{if}\ X=Y=T\\ \cr
+F&  \text{otherwise}
+\end{cases}
+$
+
+$
+\to (X,Y)::=
+\begin{cases}
+F & \text{if}\ X=T \text{ and }Y=F \\ \cr
+T&  \text{otherwise}
+\end{cases}
+$
+
+$
+\neg (X)::=
+\begin{cases}
+T & \text{if}\ X=F\\ \cr
+F&  \text{otherwise}
+\end{cases}
+$
+ -->
 ---
 
 ## 注
 
 <ul class="comments">
-<li><span id="tyuu1">\*1. (含意と伴立)
-「$P\to Q$」という形式は、「含意」(implication)と呼ばれる関係である。
-これを、「$P\to Q, P \vdash  Q$」という「伴立」(Entailment)と混同してはならない。
-後者は、Modus Ponensと呼ばれる純粋な推論形式であるが、前者の含意は論理以外の観念が結びつく。
-例えば、「もし、私が風呂に入ったならば、私の体は水に濡れる」という命題は、前者(風呂にはいる)が後者(水に濡れる)を含意しているため妥当な条件言明である。
-しかし、これが妥当だと言えるのは、前者と後者の間に観念的な結びつきが見出されるからである。
-つまり、前者がと後者の命題における「意味」という内包性がこの妥当性を保証しているのである。
-含意と伴立の関係はラッセルなどにしばし混同された。
-そして、この含意の混同を批判して厳密にする研究からC. I. ルイスが様相論理学を開始した。
-
+<li><span id="tyuu1">\*1. 
+「$P\to Q$」という形式は、「含意」(implication)と呼ばれる。
+そして、これは日常言語の「ならば」とかけ離れたものである。
+例えば、「地球は平たい、ならば、クジラは魚である」などの条件と結論に関連性がないものであっても真偽判断がなされ、そして、これは真である。これらの関連性に注目し古典論理を拡張した論理を関連論理と呼ぶ。
   </span></li>
 </ul>
 
@@ -488,7 +484,7 @@ $
 
 ## 参考文献
 最後の項目
-<a href="http://127.0.0.1:5000/pages/en/16.html">「前期ウィトゲンシュタイン「論理哲学論考」#7 語りえぬもの：倫理」</a> にまとめた。
+<a href="https://nomuras.github.io/pages/en/16.html">「前期ウィトゲンシュタイン「論理哲学論考」#7 語りえぬもの：倫理」</a> にまとめた。
 
 
 <!--  -->
@@ -499,8 +495,8 @@ $
     Last updated&nbsp; 2011/02/14
 </div>
 <h5> 
-<a href="http://127.0.0.1:5000/pages/en/11.html">&lt;&lt; 前へ</a> │
-<a href="http://127.0.0.1:5000/pages/en/13.html"> 次へ &gt;&gt;</a> │ 
+<a href="https://nomuras.github.io/pages/en/11.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/en/13.html"> 次へ &gt;&gt;</a> │ 
 <a href="#top">一番上に戻る</a> 
 </h5>
 
