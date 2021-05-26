@@ -1,6 +1,7 @@
 # coding:utf-8
 
 import flask 
+# import datetime
 
 REFERENCE={
 'greek29'       :"Wikipedia. 生命の起源. (最終アクセス 2013/09/03)",#a01
@@ -9,7 +10,7 @@ REFERENCE={
 'ana2'          :"Wikipedia. Ordinary language  school.  (最終アクセス 2013/09/03)",#a04
 'ana4'          :"Wikipedia. Wittgenstein on  Russell's   Paradox.     (最終アクセス 2013/09/03)",#a05
 'greek2'        :"Stanford Encyclopedia of Philosophy. Zeno of Elea.    (最終アクセス 2013/09/03)",#a05
-'ana5'          :"Stanford Encyclopedia of  Philosophy. Wittgenstein's Logical Atomism. (最終アクセス 2013/09/03)",#a06
+'ana5'          :"Stanford Encyclopedia of Philosophy. Wittgenstein's Logical Atomism. (最終アクセス 2013/09/03)",#a06
 'fr1'           :"Stanford Encyclopedia of Philosophy. Deleuze.  (最終アクセス 2013/09/03)",#a01
 'ana1'          :"McDowell     J.  1984    'Wittgenstein   on  Following   a   Rule'       Synthese    58:325-364",#002
 'greek1'        :"Plato    (著)・Grube       G.  M.  A.(翻訳).『Plato   Five    Dialogues   :   Euthyphro       Apology     Crito       Meno        Phaedo』、Hackett Pub Co  Inc.、2002",#003

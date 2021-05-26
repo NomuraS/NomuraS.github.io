@@ -19,14 +19,12 @@
 論理空間に移る前に、Wの論理定項が指示対象を持つかという問題に対する否定的なスタンスをみておく。
 論理定項とは、一般的に論理学で用いられる定項のことであるが、ここで扱うのは基本的な($\neg, \wedge, \vee, \to$)の4つである。
 <table class="mytable">
-<thead>
+<tbody>
   <tr>
     <td class="mytd">否定</td>
     <td class="mytd">$\neg P$</td>
     <td class="mytd">not $P$</td>
   </tr>
-</thead>
-<tbody>
   <tr>
     <td class="mytd">連言</td>
     <td class="mytd">$P\wedge Q$</td>
@@ -126,52 +124,53 @@ Fは、野矢氏[12, p.94]の解説によると、いかなる事態も属して
 <table class="mytable">
 <thead>
   <tr>
-    <th class="myth"></th>
-    <th class="myth">$P$</th>
-    <th class="myth">$Q$</th>
-    <th class="myth">← 要素命題</th>
-    <th class="myth" rowspan="5"></th>
-    <th class="myth"></th>
-    <th class="myth">$P\vee Q$</th>
-    <th class="myth">← $\vee$は真理関数</th>
-    <th class="myth"></th>
+    <td class="mytd"></td>
+    <td class="mytd">$P$</td>
+    <td class="mytd">$Q$</td>
+    <td class="mytd">← 要素命題</td>
+    <td class="mytd" rowspan="5"></td>
+    <td class="mytd"></td>
+    <td class="mytd">$P\vee Q$</td>
+    <td class="mytd">← $\vee$は真理関数</td>
+  </tr>
+</tdead>
+<tbody>
+  <tr>
+    <td class="mytd">真理可能性1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd" rowspan="4">← 論理空間</td>
+    <td class="mytd">真理条件1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">← 真理根拠1</td>
+    <td class="mytd" rowspan="3">真理領域</td>
   </tr>
   <tr>
-    <th class="myth">真理可能性1</th>
-    <th class="myth">T</th>
-    <th class="myth">T</th>
-    <th class="myth" rowspan="4">← 論理空間</th>
-    <th class="myth">真理条件1</th>
-    <th class="myth">T</th>
-    <th class="myth">← 真理根拠1</th>
-    <th class="myth" rowspan="3">真理領域</th>
+    <td class="mytd">真理可能性2</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+    <td class="mytd">真理条件2</td>
+    <td class="mytd">T</td>
+    <td class="mytd">← 真理根拠2</td>
   </tr>
   <tr>
-    <th class="myth">真理可能性2</th>
-    <th class="myth">F</th>
-    <th class="myth">T</th>
-    <th class="myth">真理条件2</th>
-    <th class="myth">T</th>
-    <th class="myth">← 真理根拠2</th>
+    <td class="mytd">真理可能性3</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+    <td class="mytd">真理条件3</td>
+    <td class="mytd">T</td>
+    <td class="mytd">← 真理根拠3</td>
   </tr>
   <tr>
-    <th class="myth">真理可能性3</th>
-    <th class="myth">T</th>
-    <th class="myth">F</th>
-    <th class="myth">真理条件3</th>
-    <th class="myth">T</th>
-    <th class="myth">← 真理根拠3</th>
+    <td class="mytd">真理可能性4</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+    <td class="mytd">真理条件4</td>
+    <td class="mytd">F</td>
+    <td class="mytd"></td>
+    <td class="mytd"></td>
   </tr>
-  <tr>
-    <th class="myth">真理可能性4</th>
-    <th class="myth">F</th>
-    <th class="myth">F</th>
-    <th class="myth">真理条件4</th>
-    <th class="myth">F</th>
-    <th class="myth"></th>
-    <th class="myth"></th>
-  </tr>
-</thead>
+</tbody>
 </table>
 
 <!-- 　要素命題　　　　　P Q　　　　P\wedge Q　　　真理関数(複合命題)
@@ -202,12 +201,14 @@ $P\wedge Q$の真理条件を横書きで記すと(TTTF)となり、左から真
 <!-- (論理空間) -->
 
 <table class="mytable">
-<tbody>
+<tdead>
 <tr>
     <th class="myth"></th>
     <th class="myth">$P$</th>
     <th class="myth">$\neg P$</th>
   </tr>
+</tdead>
+<tbody>
   <tr>
     <td class="mytd">真理可能性1</td>
     <td class="mytd">T</td>
