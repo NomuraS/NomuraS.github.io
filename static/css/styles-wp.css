@@ -9090,7 +9090,10 @@ ul.pagination li {
 
 table {
     border-collapse:collapse;
-  margin:0 auto;
+margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
   width: initial !important;
 /*  background: #ffffff;
   border: solid 1px #DDDDDD;
