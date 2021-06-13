@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>知識の積み木 近代哲学</title>
+    <link rel="shortcut icon" href="../../static/img/icon-book.png" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' href="../../static/css/styles-wp.css" />
+    <link rel='stylesheet' href="../../static/css/styles.css" />
+    <link rel='stylesheet' href="../../static/css/popup_comments.css" />
+    <script src="../../static/js/lib/jquery.js"></script>
+    <script src="../../static/js/marked.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+<style>
+body{
+   /*background: #a3c6cc  url(../../static/img/almond.jpg) no-repeat fixed;*/
+   background: #a3c6cc  url(../../static/img/almond.jpg) no-repeat fixed;
+    background-size:cover
+}
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="row">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <div id="site-title">
+                            <a href="../../index.html"> 知識の積み木 </a>
+                            <small>Tishiki No Tsumiki</small>
+                        </div>
+                    </li>
+                    <li class="toggle-topbar menu-icon">
+                        <a href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <span class="toggle-area"></span>
+                    </li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul id="menu-main-menu" class="right">
+                        <li>
+                            <a href="../../index.html">HOME</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="">Categories</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="../../index.html#cat_kodai">古代哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_tyusei">中世哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_kindai">近代哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_gendai">現代哲学(19-20世紀)</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_fr">現代フランス哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_en">現代イギリス哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_us">現代アメリカ哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_lang">言語哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_science">科学哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_mind">心の哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_epist">認識論・懐疑論</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_east">東洋哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_art">美学・芸術の哲学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../index.html">About</a>
+                        </li>
+                        <li> </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <div class="main" style="margin:auto">
+        <div class="columns large-9 right">
+            <article class="post">
+                <div class="entry ">
+                    <div id="mdrender"></div>
+                    <div id="mdraw" style="display:none;">
+                        
+<style>
+/*Now the CSS*/
+* {	
+/*	margin: 0;
+	padding: 0;*/
+}
+ 
+.tree ul {
+    padding-top: 20px; position: relative;
+     
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+ 
+.tree li {
+    float: left; 
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+     
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+ 
+/*We will use ::before and ::after to draw the connectors*/
+ 
+.tree li::before, .tree li::after{
+    content: '';
+    position: absolute; top: 0; right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%; height: 20px;
+}
+.tree li::after{
+    right: auto; left: 50%;
+    border-left: 1px solid #ccc;
+}
+ 
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+ 
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+ 
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+    border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+ 
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0; height: 20px;
+}
+ 
+.tree li a{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+     
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+ 
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+    border-color:  #94a0b4;
+}
+
+.clear_both{
+	clear:both;
+} 
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+</style>
+<h5> 
+<a href="https://nomuras.github.io/pages/modern/16.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/modern/18.html"> 次へ &gt;&gt;</a> 
+</h5>
+
+
+# カント「純粋理性批判」#1(アプリオリな総合判断) 
+
+<span class="clor-blue">ヒュームの懐疑論の衝撃</span>で「独断のまどろみ」より目を覚ましたカントは、人間理性を批判的に考察し、その射程と限界を明らかにしようとした。つまり、知識が学問的なものであるための条件と、またそのような条件下で「神」や「魂の不死」といった伝統的な形而上学的の概念は学問的と言えるかどうか批判的に見直した。
+そしてその結果、カントは、経験論と合理論の哲学の二つの支流を合流させ、人間理性のうちに`先験的(アプリオリ:a priori)`(または、`超越論的(transzendental)`と呼ばれる)に備わる認識形式を見出し、それを学問の条件とすることによって、神を土台とする伝統的な形而上学や認識論を破壊するという、哲学史において重大な転機をもたらした。
+カントの哲学は、超越論哲学と呼ばれ、『純粋理性批判』のタイトルからも見て取れるようにまたその傾向ゆえに批判哲学とも呼ばれる <a class="s" style="font-size:15px">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>。
+
+## アプリオリな総合判断(Synthetisches Urteil)
+まずは、学問的な知識の条件の検討である。今までの哲学者は、認識の種類を`アプリオリな分析判断(Analytisches Urteil)`と`アポステリオリな総合判断(Synthetisches Urteil)`のふたつしか認めなかった。前者は、述語が主語にすでに含まれている判断。「独身者は未婚である」といった命題。これは認識を拡張することはなく、同語反復でA=Aという同一率にとどまり、絶対的な真理だがこれによる認識の拡張はありえない。後者は、主語と述語の関係が経験によってもたらされる判断。例えば「水は冷たい」といった命題。これは認識を拡張可能であるが不確実なものにとどまる。
+
+- 分析的：認識を拡張しない
+- 総合的：認識を拡張する
+- アプリオリな認識：その正当化のためいかなる経験をも引き合いに出す必要がない認識(確実性・必然性を伴う)
+- アポステリオリな認識：その正当化のために何らかの経験に依拠する認識 
+
+では人間の認識は同語反復に内にとどまるか、不確実な認識を拡張するしかないのだろうか。あらゆる認識の拡張である学問的な知識をアポステリオリな総合判断に還元したヒュームはそう考えた。しかし、カントはヒュームがアポステリオリな認識判断に還元したはずの自然科学(ニュートン力学など)と数学の現実における成功は無視できなかった。そこで、カントは上記の二つの認識とは異なった三つ目の「アプリオリな総合判断／先験的総合判断」を加える。
+
+カントはまず、ヒュームの懐疑哲学にしたがって、例えば、自然における因果関係において必然的結合を認識しえないとした(経験論的)。しかし、ヒュームは我々が実際にもつ因果関係に対する確信は習慣に基づく主観的な信念でしかないと考えたが、カントはこのような因果性の認識は人間に備わるアプリオリな知性の形式であるとする(合理論的)。このような類の判断がアプリオリな総合判断である。そして、因果性、時間と空間などは、客観的に存在したり、事物そのものに属しているわけではなく、我々人間の超越論的な形式によって提供される。カントは、このアプリオリで超越論的な認識の発見が自然科学や数学などの学問の普遍的な妥当性を正当化し可能にすると考えた。
+
+## コペルニクス的転回
+今までの哲学は、客観を主観が受け取ることが認識であると考え、その主客の相互関係を示すことを探求してきたが、それを達成することはできなかった。そこでカントは主観が客観に従っているという立場を逆転させて、客観が主観に従っているとしたのである。カントの言葉によると：
+<blockquote>
+これまでは、我々の認識は全て対象に従わなければならないと想定されていた。しかし対象に関してアプリオリな概念を持って何らかの―それによって我々の認識が拡張されるような―決定をしようとする企ては、このような想定のもとでは全て失敗してしまった。したがって対象が我々の認識に従わなければならないと想定したら、形而上学の問題がもっとうまく解決されはしないかどうか、やってみようではないか。(引用？)
+</blockquote>
+
+これを彼は`コペルニクス的転回(Kopernikanische Wende)`という。このように、ある対象を認識するとは主観側のアプリオリな認識様式に従って対象を構成するのだとする。これを超越論的観念論という。
+
+
+
+
+## カント哲学の概要
+カントは自らの哲学を心理学的な分類に従い三つに分ける。
+
+
+<ul>
+	<li>純粋理性批判: 認識(原理、指導的な法則)</li>
+	<li>実践理性批判: 感情(欲求、行為)</li>
+	<li>判断力批判: 意欲(快不快の感情)</li>
+</ul>
+
+そして、カント哲学全体を貫く認識論の問題を扱うのが、『純粋理性批判』である。
+
+<div class="tree">
+      <ul>
+        <li><a href="#">純粋理性批判<br>認識(原理、指導的な法則)</a>
+          <ul>
+            <li><a href="#">超越論的原理論</a>
+              <ul>
+                <li><a href="#">(１)超越論的感性論<br>(空間と時間論)</a></li>
+                <li><a href="#">超越論的論理学</a>
+                  <ul>
+                    <li><a href="#">真理の論理学</a>
+                      <ul>
+                        <li><a href="#">(２)超越論的分析論<br>(認識論と因果論)</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">仮象の論理学</a>
+                      <ul>
+                        <li><a href="#">(３)超越論的弁証論<br>(道徳論と神学論)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">超越論的方法論</a></li>
+          </ul>
+        </li>
+      </ul>
+</div>
+
+<p class="clear_both">
+カントは、人間理性のうちにアプリオリな認識能力が備わっているとしたが、そのアプリオリな原理はなにかという問題を扱う。そして、認識を受動的な認識能力である`感性(Sinnlichkeit)`と能動的な認識能力である`悟性(Verstand)`にわけて、
+(１)超越論的感性論と
+(２)超越論的分析論においてそれぞれのうちにアプリオリな原理を探求した。
+そして、その見つかったアプリオリな形式を用いて
+(３)にて思弁的形而上学を批判的に吟味する。
+(言い換えれば、(１)と(２)にて新たな形而上学を構成し、それを用いて(３)で伝統的な形而上学を批判する)。
+
+<ul>
+	<li>(感性論)感性(認識能力の受動性)が現象を直観する。ここに時間と空間がアプリオリな形式として存在する</li>
+	<li>(分析論)その直観を悟性(認識能力の能動性)が思惟することによって認識にいたる</li>
+</ul>
+
+</p>
+
+---
+
+## 注
+<span id="tyuu1">\*1
+カントの「批判」とは単に対象の欠点を見いだして否定するという意味ではなく、対象が成立している根本を見出して、これを明晰化して妥当範囲を見出すことによって、対象が主張することの有効な範囲を見定めるという意味を持つ。
+</span>
+
+
+---
+
+## 参考文献
+
+1. 有福孝岳ほか  (編集)、『カント事典』、弘文堂、1997
+<!-- - カント事典(有福孝岳他(編)) -->
+<!-- - 西洋哲学史(ｼｭｳﾞｪｰｸﾞﾗｰ) -->
+- ウォーバートン,    N.  (著)・船木亨(翻訳)、『入門 哲学の名著』、ナカニシヤ出版、2005
+- シュヴェーグラー    (著)・谷川徹三ほか(翻訳)、『西洋哲学史〈上〉』、岩波文庫、1995
+<!-- - 入門哲学の名著(ｳｫｰﾊﾞｰﾄﾝ) -->
+- バウムガルトナー,       H.  M.  (著)・有福孝岳(翻訳)、『カント入門講義―『純粋理性批判』読解のために』、法政大学出版局、1994
+<!-- - カント入門講義(ﾊﾞｳﾑｶﾞﾙﾄﾅｰ) -->
+- 藤田昇吾   (著)、『カント哲学の特性』、晃洋書房、2004
+<!-- - カント哲学の特性(福田昇吾) -->
+
+<!--  -->
+
+<div align="right">
+    First post &nbsp; 2008/10/19<br>Last updated&nbsp; 2010/11/11
+</div>
+<h5> 
+<a href="https://nomuras.github.io/pages/modern/16.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/modern/18.html"> 次へ &gt;&gt;</a> │ 
+<a href="#top">一番上に戻る</a> 
+</h5>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- side-bar -->
+        <div class="columns large-3">
+            <div class="sidebar">
+                <aside class="widget">
+                    <h4 class="widget-title">index</h4>
+                    <ul>
+                        <li>
+                            <a href="../../index.html#cat_kodai">古代哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_tyusei">中世哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_kindai">近代哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_gendai">現代哲学(19-20世紀)</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_fr">現代フランス哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_en">現代イギリス哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_us">現代アメリカ哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_lang">言語哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_science">科学哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_mind">心の哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_epist">認識論・懐疑論</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_east">東洋哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_art">美学・芸術の哲学</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script src="../../static/js/script-wp.js"></script>
+    <script src="../../static/js/script-wp2.js"></script>
+</body>
+<script>
+    // markdown rendering
+    document.getElementById("mdrender").innerHTML = marked(document.getElementById("mdraw").innerHTML);
+</script>
+<script>
+    // popup commnet
+    $(document).ready(function () {
+        for (var i = 0; i < 100; i++) {
+            $('#popup_tyuu' + i).html($('#tyuu' + i).html());
+        };
+        for (var i = 0; i < 100; i++) {
+            $('.popup_cite' + i).html($('.cite' + i).html());
+        };
+    })
+</script>
+
+</html>
+
+
+
+<!-- 
+
+<span class="para"></span>
+    
+
+
+<ul class="book_list">
+    <li>主著</li>
+    <li></li>
+</ul>
+
+
+
+————
+
+<a class="s">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>
+<a class="s">(\*2)<span class="s-balloon" id="popup_tyuu2"></span></a>
+<a class="s">(\*3)<span class="s-balloon" id="popup_tyuu3"></span></a>
+
+<ul class="comments">
+    <li><span id="tyuu1">\*1. texttext </span></li>
+    <li><span id="tyuu2">\*2. texttext </span></li>
+</ul>
+ -->

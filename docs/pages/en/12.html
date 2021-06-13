@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>知識の積み木 現代イギリス哲学</title>
+    <link rel="shortcut icon" href="../../static/img/icon-book.png" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' href="../../static/css/styles-wp.css" />
+    <link rel='stylesheet' href="../../static/css/styles.css" />
+    <link rel='stylesheet' href="../../static/css/popup_comments.css" />
+    <script src="../../static/js/lib/jquery.js"></script>
+    <script src="../../static/js/marked.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+<style>
+body{
+   /*background: #a3c6cc  url(../../static/img/almond.jpg) no-repeat fixed;*/
+   background: #a3c6cc  url(../../static/img/almond.jpg) no-repeat fixed;
+    background-size:cover
+}
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="row">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <div id="site-title">
+                            <a href="../../index.html"> 知識の積み木 </a>
+                            <small>Tishiki No Tsumiki</small>
+                        </div>
+                    </li>
+                    <li class="toggle-topbar menu-icon">
+                        <a href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <span class="toggle-area"></span>
+                    </li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul id="menu-main-menu" class="right">
+                        <li>
+                            <a href="../../index.html">HOME</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="">Categories</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="../../index.html#cat_kodai">古代哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_tyusei">中世哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_kindai">近代哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_gendai">現代哲学(19-20世紀)</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_fr">現代フランス哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_en">現代イギリス哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_us">現代アメリカ哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_lang">言語哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_science">科学哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_mind">心の哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_epist">認識論・懐疑論</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_east">東洋哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_art">美学・芸術の哲学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../index.html">About</a>
+                        </li>
+                        <li> </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <div class="main" style="margin:auto">
+        <div class="columns large-9 right">
+            <article class="post">
+                <div class="entry ">
+                    <div id="mdrender"></div>
+                    <div id="mdraw" style="display:none;">
+                        
+
+<h5> 
+<a href="https://nomuras.github.io/pages/en/11.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/en/13.html"> 次へ &gt;&gt;</a> 
+</h5>
+
+# 前期ウィトゲンシュタイン「論理哲学論考」#4-1 論理空間における真理操作
+
+ここまでの議論を要約すると、まず、我々は存在論的世界から像である命題を構成する。
+そして、この命題を要素命題に分析した後、名の論理形式を解明することにより、要素命題から名が分解される。
+さらにその分解された名で論理形式に従って有意味な命題である要素命題を再構成することが可能になる。
+次に、その再構成された要素命題によって論理空間が展開される。
+この論理空間は今では真理表と呼ばれるものであり、これによって論理定項の役割である真理の操作を見ることが可能になる。
+
+
+## 論理定項の意味の否定
+論理空間に移る前に、Wの論理定項が指示対象を持つかという問題に対する否定的なスタンスをみておく。
+論理定項とは、一般的に論理学で用いられる定項のことであるが、ここで扱うのは基本的な($\neg, \wedge, \vee, \to$)の4つである。
+<table class="mytable">
+<tbody>
+  <tr>
+    <td class="mytd">否定</td>
+    <td class="mytd">$\neg P$</td>
+    <td class="mytd">not $P$</td>
+  </tr>
+  <tr>
+    <td class="mytd">連言</td>
+    <td class="mytd">$P\wedge Q$</td>
+    <td class="mytd">$P$ and $Q$</td>
+  </tr>
+  <tr>
+    <td class="mytd">選言</td>
+    <td class="mytd">$P\vee Q$</td>
+    <td class="mytd">$P$ or $Q$</td>
+  </tr>
+  <tr>
+    <td class="mytd">条件</td>
+    <td class="mytd">$P\to Q$</td>
+    <td class="mytd">if $P$, then $Q$</td>
+  </tr>
+</tbody>
+</table>
+
+例えば、「$\neg$」は否定を表す論理定項で、これを命題の頭に付けることでその命題を否定する。
+「ミケは魚を食べる」という命題にこれを付けることで(「$\neg$ (ミケは魚を食べた)」)、それは「ミケは魚を食べなかった」と全体を否定する命題になる。
+
+では、**この論理定項自体は指示対象をもつのだろうか**。
+フレーゲやラッセルはイエスと答える。
+例えば、($P\wedge Q$)という複合命題がもつ論理定項「$\wedge$」はそれ自体で意味をもつ。
+しかし、それだと、($P\wedge Q$)は$P$と$Q$から独立した真理値をもつことになり、なぜ、($P\wedge Q$)という真理関数に真偽を当てはめたとき、(TTTF)という真理条件が出力されるのか説明されない。
+Wはここにおいても反対の立場をとり、論理定項は独立した価値を持たないと考える(「論理的対象は存在しない」(4.441))。
+なぜなら、
+もし、論理定項「$\neg$ 」が名であるならば、二重否定「$\neg\neg P$」が、「$P$」と同一の意味をもつということに対して説明できない。
+<!-- 「$\neg$ 」が指示対象をもつ名であるならば「$\neg\neg P$」と「$P$」が同一ということはありえない。 -->
+加えて、命題は一種の像であり、そして、命題は否定「$\neg$ 」を加えることによって簡単に否定しえる。
+これはつまり、像は否定し得るということを意味するが、例えば、他の事実を表す像である絵画はどのように否定しえるだろうか。
+「ミケは魚を食べる」という事実を表す絵画を墨で塗りつぶしたり、ナイフで切り裂いたとしてもその絵が表す内容を否定することはできない(「ミケは魚を食べなかった」を表すことはできない)。
+これらはつまり、論理定項は指示対象をもたず、そして、これは**真理を操作するもの(関数)である**ということを示唆している。
+
+
+
+<blockquote>
+「論理定項」はなんらかの対象の代わりをするものではない。
+事実の論理は記号で表しえない。
+これが私の根本思想である。
+(4.0312)
+</blockquote>
+
+## ５. 論理空間
+論理形式によって分解された名から事態に対応する要素命題が論理形式に従って構成されることによって、我々は超越論的に可能な事態の総体を作り上げる。
+これを論理空間とよぶ。
+例えば、$P$と$Q$という要素命題を得たならば、それぞれの要素命題が成立し真(T)であるときと偽(F)であるときがある。
+そして、それぞれの要素命題の真偽の組み合わせて可能な事態を構成する。
+また、要素命題が複数になることにより、可能な事態は増える(nを要素命題の数とすると、可能な事態は2^n個ある)。
+$P$と$Q$の二つの要素命題の場合、それらの事態の組み合わせは四組(＝2^2)である：
+
+(論理空間)
+
+<table class="mytable">
+<thead>
+  <tr>
+    <th class="myth">要素命題</th>
+    <th class="myth">$P$</th>
+    <th class="myth">$Q$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="mytd">真理可能性1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性2</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性3</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性4</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+  </tr>
+</tbody>
+</table>
+
+また、要素命題は有意味で肯定的な事態しか表さないため、この時点では否定は存在しない(理解不可能で無意味な要素命題は、論理形式から逸脱している)。
+そのため、Tが事態が成立していることを表しても、Fは事態が成立して”いない”ことを表しているわけではない。
+Fは、野矢氏[12, p.94]の解説によると、いかなる事態も属していない状態を表すと言う。
+この四つが要素命題がもつ可能な事態の全てであり、論理の基底である。
+これを基に真理操作が可能となる。
+
+
+
+## 用語紹介
+先に$P\wedge Q$の真理表と共に用語をまとめてみておく：
+
+<table class="mytable">
+<thead>
+  <tr>
+    <td class="mytd"></td>
+    <td class="mytd">$P$</td>
+    <td class="mytd">$Q$</td>
+    <td class="mytd">← 要素命題</td>
+    <td class="mytd" rowspan="5"></td>
+    <td class="mytd"></td>
+    <td class="mytd">$P\vee Q$</td>
+    <td class="mytd">← $\vee$は真理関数</td>
+  </tr>
+</tdead>
+<tbody>
+  <tr>
+    <td class="mytd">真理可能性1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd" rowspan="4">← 論理空間</td>
+    <td class="mytd">真理条件1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">← 真理根拠1</td>
+    <td class="mytd" rowspan="3">真理領域</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性2</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+    <td class="mytd">真理条件2</td>
+    <td class="mytd">T</td>
+    <td class="mytd">← 真理根拠2</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性3</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+    <td class="mytd">真理条件3</td>
+    <td class="mytd">T</td>
+    <td class="mytd">← 真理根拠3</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性4</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+    <td class="mytd">真理条件4</td>
+    <td class="mytd">F</td>
+    <td class="mytd"></td>
+    <td class="mytd"></td>
+  </tr>
+</tbody>
+</table>
+
+<!-- 　要素命題　　　　　P Q　　　　P\wedge Q　　　真理関数(複合命題)
+――――――――――――――――――――――――　　　　　　　
+真理可能性１　　　 T T　　　　　T　　　　真理条件１　　真理根拠１┐
+真理可能性２　　　 F T　　　　　T　　　　真理条件２　　真理根拠２｜諸真理根拠群
+真理可能性３　　　 T F　　　　　T　　　　真理条件３　　真理根拠３┘(真理領域)
+真理可能性４　　　 F F　　　　　F　　　　真理条件４ -->
+
+$P\wedge Q$の真理条件を横書きで記すと(TTTF)となり、左から真理条件１２３４に対応する。
+
+
+### ５－１. 論理定項の真理領域の操作
+論理空間の意味が明らかになったならば論理定項の役割もまた明確となる。
+それは、真理(TとF)の関数的な操作である。
+これは論理プラトニズムを唱えるフレーゲに反対する観点であり、論理にアプリオリ性を主張するものである。
+それは、$(P\wedge Q)$が(TTTF)という真理条件を表示するのではなく、例えば、論理定項「$\wedge $」は$P$と$Q$という二つの要素命題における真理領域をアプリオリに操作し、新たに(TTTF)という真理条件を生み出すのである。
+そして、この真理条件が($P\wedge Q$)という複合命題を表すのだと言う。
+具体的に、基本的な4つの論理定項がどのような真理操作を行うか見てみる。
+
+
+##### 論理定項「$\neg$ 」の役割
+それぞれの要素命題は、それぞれが真となる領域(真理領域)を持つ、例えば、要素命題$P$の場合、$P$は、可能な事態を二つ持つため、(TF)という真理可能性群を持つ。
+同時に(TF)は$P$の真理条件群である。
+そして、この諸真理条件群を反転させるのが、論理定項「$\neg$ 」である。
+下の表を見れば真理条件群が反転しているのが分かる。
+
+<!-- (論理空間) -->
+
+<table class="mytable">
+<tdead>
+<tr>
+    <th class="myth"></th>
+    <th class="myth">$P$</th>
+    <th class="myth">$\neg P$</th>
+  </tr>
+</tdead>
+<tbody>
+  <tr>
+    <td class="mytd">真理可能性1</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性2</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+  </tr>
+</tbody>
+</table>
+
+
+<!-- 　　　　　　　　　　　　P 　　　　　P 　　　　$\neg P$
+―――――――――――――――――――――――――
+　　　 T　　　　　T　　　　　　F　　真理条件１
+真理可能性２　　　 F　　　　　F　　　　　　T　　真理条件２ -->
+
+Wの表記法によると、(FT)($P$)と表記されこれが$\neg P$を意味する。
+また、二重否定($\neg\neg P$)は真理領域の操作を二度行うので(TF)($P$)となり、$P$と等しくなることが分かる。
+
+##### 論理定項「$\vee,\wedge,\to$ 」の役割
+下の表は、「$\vee,\wedge,\to$ を網羅的に定義したものである。
+最終的に(TTTF)という真理条件群を形成している。
+これはWの記号法で記すと、(TTTF)($P, Q$)となる。
+
+
+<table class="mytable">
+<thead>
+  <tr>
+    <th class="myth"></th>
+    <th class="myth">$P$</th>
+    <th class="myth">$Q$</th>
+    <th class="myth">$P\vee Q$</th>
+    <th class="myth">$P\wedge Q$</th>
+    <th class="myth">$P\to Q$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="mytd">真理可能性(1)</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性(2)</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性(3)</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+  </tr>
+  <tr>
+    <td class="mytd">真理可能性(4)</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+    <td class="mytd">F</td>
+    <td class="mytd">T</td>
+  </tr>
+</tbody>
+</table>
+
+<!-- 
+##### 論理定項「$\to $」の役割
+論理定項「$\to$ 」は、推論関係を表す論理定項である。
+では、正しい推論と誤った推論はどのようなものか(5.12)。
+$P$から$Q$が導かれる場合、$Q$の真理領域には必ず$P$の全ての真理根拠を含む(5.122)。
+例えば、($P\wedge Q$)の真理領域は(TFFF)であった、そして($P\wedge Q$)の真理領域は(TTTF)である。
+つまり、($P\wedge Q$)の真理根拠は($P\vee Q$)に含まれているため(真理条件１のTが共通している真理根拠)、($P\wedge Q)\to (P\vee Q$)は正しい推論であると言える。このように推論の真偽とは、前者の真理領域を後者が内包しているかどうかである。
+
+では、なぜ(3)が誤った推論なのか。
+例えば、自然数nに対し$P$を(n＞4)、$Q$を(n＞2)とし、$P\to Q$という命題を考えてみる。
+そうすると、$P$の真理領域は「5以上」である。
+また、$Q$の真理領域は、「3以上」となる。
+そして、正しい推論とは$Q$の真理領域に$P$の真理領域が含まれていることであった。
+それぞれの事態を検証してみる：
+
+1. の(P=Q=T)という場合は､であるため、Pの真理領域は「5以上」の整数となり、Qの真理領域は「3以上」の整数となる。
+そして、Qの真理領域をかならず、Pの真理領域は含んでいるため、この推論は正しいものと言える。
+2. の(P=F, Q=T)という場合は､P[F]はの真理領域は｢4以下｣の整数となり、Q[T]の真理領域は｢3以上｣の整数となる。
+そして、整数４をP[F]の真理根拠とすることによって、Q[T]の真理領域にP[F]の真理根拠を含ませることができるため、この推論は正しいものと言える。
+3. の(P=Q=F)という場合は､Pの真理領域は｢4以下｣の整数となり、Qの真理領域は｢2以下｣の整数となる。
+そして、整数１をPの真理根拠とすることによって、Qの真理領域にPの真理根拠を含ませることができるため、この推論は正しいものと言える。
+4. の(P=F, Q=T)という場合は､P[T]の真理領域は｢5以上｣の整数となり、Q[F]の真理領域に｢2以下｣の整数となる。
+しかし、この条件を満たす整数(真理根拠)は存在しない。
+つまりどうやっても、Q[F]の真理根拠をP[T]の真理領域に含ませることはできない。
+そのため、誤った推論であるといえる。
+この$P\to Q$の関係は現在では含意<a class="s">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>と呼ばれている。
+
+
+##### 真理値表 
+ -->
+
+この論理定項の真理条件の表は、今では`真理値表(truth table)`と呼ばれ論理学の授業ではじめに習うもので、それはこの『論考』における哲学的な考察が基礎の一つになっている。
+
+<!-- 
+
+また、4つの論理定項を表ではなく等号で定義しておこう。
+論理定項$ \vee, \wedge, \to$は、それぞれ$\lbrace{T,F\rbrace}\times \lbrace{T,F\rbrace}\to \lbrace{T,F\rbrace}$ 
+という型、$\neg$は
+$\lbrace{T,F\rbrace}\to \lbrace{T,F\rbrace}$
+という型を持ち、以下のように定義される。
+
+$
+\vee (X,Y)::=
+\begin{cases}
+F & \text{if}\ X=Y=F\\ \cr
+T&  \text{otherwise}
+\end{cases}
+$
+
+$
+\wedge (X,Y)::=
+\begin{cases}
+T & \text{if}\ X=Y=T\\ \cr
+F&  \text{otherwise}
+\end{cases}
+$
+
+$
+\to (X,Y)::=
+\begin{cases}
+F & \text{if}\ X=T \text{ and }Y=F \\ \cr
+T&  \text{otherwise}
+\end{cases}
+$
+
+$
+\neg (X)::=
+\begin{cases}
+T & \text{if}\ X=F\\ \cr
+F&  \text{otherwise}
+\end{cases}
+$
+ -->
+ 
+---
+
+## 注
+
+<ul class="comments">
+<li><span id="tyuu1">\*1. 
+「$P\to Q$」という形式は、「含意」(implication)と呼ばれる。
+そして、これは日常言語の「ならば」とかけ離れたものである。
+例えば、「地球は平たい、ならば、クジラは魚である」などの条件と結論に関連性がないものであっても真偽判断がなされ、そして、これは真である。これらの関連性に注目し古典論理を拡張した論理を関連論理と呼ぶ。
+  </span></li>
+</ul>
+
+---
+
+## 参考文献
+最後の項目
+<a href="https://nomuras.github.io/pages/en/16.html">「前期ウィトゲンシュタイン「論理哲学論考」#7 語りえぬもの：倫理」</a> にまとめた。
+
+
+<!--  -->
+
+<div align="right">
+    First post &nbsp; 2009/01/19
+    <br>
+    Last updated&nbsp; 2011/02/14
+</div>
+<h5> 
+<a href="https://nomuras.github.io/pages/en/11.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/en/13.html"> 次へ &gt;&gt;</a> │ 
+<a href="#top">一番上に戻る</a> 
+</h5>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- side-bar -->
+        <div class="columns large-3">
+            <div class="sidebar">
+                <aside class="widget">
+                    <h4 class="widget-title">index</h4>
+                    <ul>
+                        <li>
+                            <a href="../../index.html#cat_kodai">古代哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_tyusei">中世哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_kindai">近代哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_gendai">現代哲学(19-20世紀)</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_fr">現代フランス哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_en">現代イギリス哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_us">現代アメリカ哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_lang">言語哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_science">科学哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_mind">心の哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_epist">認識論・懐疑論</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_east">東洋哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_art">美学・芸術の哲学</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script src="../../static/js/script-wp.js"></script>
+    <script src="../../static/js/script-wp2.js"></script>
+</body>
+<script>
+    // markdown rendering
+    document.getElementById("mdrender").innerHTML = marked(document.getElementById("mdraw").innerHTML);
+</script>
+<script>
+    // popup commnet
+    $(document).ready(function () {
+        for (var i = 0; i < 100; i++) {
+            $('#popup_tyuu' + i).html($('#tyuu' + i).html());
+        };
+        for (var i = 0; i < 100; i++) {
+            $('.popup_cite' + i).html($('.cite' + i).html());
+        };
+    })
+</script>
+
+</html>
+
+
+
+<!-- 
+
+<span class="para"></span>
+    
+
+
+<ul class="book_list">
+    <li>主著</li>
+    <li></li>
+</ul>
+
+
+
+————
+
+<a class="s">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>
+<a class="s">(\*2)<span class="s-balloon" id="popup_tyuu2"></span></a>
+<a class="s">(\*3)<span class="s-balloon" id="popup_tyuu3"></span></a>
+
+<ul class="comments">
+    <li><span id="tyuu1">\*1. texttext </span></li>
+    <li><span id="tyuu2">\*2. texttext </span></li>
+</ul>
+ -->

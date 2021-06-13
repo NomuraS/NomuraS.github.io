@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>知識の積み木 言語哲学</title>
+    <link rel="shortcut icon" href="../../static/img/icon-book.png" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' href="../../static/css/styles-wp.css" />
+    <link rel='stylesheet' href="../../static/css/styles.css" />
+    <link rel='stylesheet' href="../../static/css/popup_comments.css" />
+    <script src="../../static/js/lib/jquery.js"></script>
+    <script src="../../static/js/marked.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+<style>
+body{
+   /*background: #a3c6cc  url(../../static/img/almond.jpg) no-repeat fixed;*/
+   background: #a3c6cc  url(../../static/img/almond.jpg) no-repeat fixed;
+    background-size:cover
+}
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="row">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <div id="site-title">
+                            <a href="../../index.html"> 知識の積み木 </a>
+                            <small>Tishiki No Tsumiki</small>
+                        </div>
+                    </li>
+                    <li class="toggle-topbar menu-icon">
+                        <a href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <span class="toggle-area"></span>
+                    </li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul id="menu-main-menu" class="right">
+                        <li>
+                            <a href="../../index.html">HOME</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="">Categories</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="../../index.html#cat_kodai">古代哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_tyusei">中世哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_kindai">近代哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_gendai">現代哲学(19-20世紀)</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_fr">現代フランス哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_en">現代イギリス哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_us">現代アメリカ哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_lang">言語哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_science">科学哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_mind">心の哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_epist">認識論・懐疑論</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_east">東洋哲学</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html#cat_art">美学・芸術の哲学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../index.html">About</a>
+                        </li>
+                        <li> </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <div class="main" style="margin:auto">
+        <div class="columns large-9 right">
+            <article class="post">
+                <div class="entry ">
+                    <div id="mdrender"></div>
+                    <div id="mdraw" style="display:none;">
+                        
+
+<h5>
+<a href="https://nomuras.github.io/pages/lang/1.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/lang/3.html"> 次へ &gt;&gt;</a>
+</h5>
+
+# ラッセル「表示について」#2 伝統的パズルの解決
+
+ライプニッツの研究からラッセルは単称名に関するいくつかのパズルを形式化し、そして彼は記述理論を用いてそれらの解消を試みた。
+
+## A. 空の指示(empty reference)
+ラッセルは、空の指示を含む命題を三つの言明に分析しそれぞれ言明の検証を可能にすることによって、この種の命題の真偽の判断を可能にする。例えば、「現代のフランス王は禿である」(The present king of France is bold)という命題を分析すると("is the present king of France" を${\tt PKF}$、"is bold"を${\tt Bald}$とする。)、${\tt Bald}(\iota x{\tt PKF}(x))$となる。前回見たようにこれは次の3つの論理式の連言と同値である。
+
+<ul>
+	<li>1. $∃x{\tt PKF}(x)$</li>
+	<li>2. $∀x({\tt PKF}(x)→∀y({\tt PKF}(y)→x=y))$</li>
+	<li>3. $∀x({\tt PKF}(x)→{\tt Bald}(x))$</li>
+</ul>
+
+そして、1の「現在のフランスの王は存在する」は現実世界では偽であり($\\{x\mid {\tt PKF}(x)\\}=\varnothing$)、これにより1を含む論理式は偽、
+すなわち、${\tt Bald}(\iota x{\tt PKF}(x))$(現在のフランス王は禿である)は偽であると判断できる。
+
+## B. 否定存在言明
+二つ目の言語パズルは次にような否定存在を表す命題である：
+
+- 現在のフランスの王は存在しない(the present king of France does not exist)
+	<!-- <li>5'. $\neg ∃x{\tt PKF}(x)$</li> -->
+
+
+この命題を真とすると現実には存在しない対象に言明していることになる。また偽とすると、「現在のフランス国王」が存在するということになり現実と矛盾してしまうというパズルだった。
+<!-- つまり、5'と1が矛盾していることが分かる。つまり先の命題は内在的に矛盾を持つため、パズル的であったのだ。 -->
+
+
+#### 記述理論による解決
+これに対する解法としては、否定を内在するのではなく全体を否定すればいい。：
+
+- $\neg ∃x({\tt PKF}(x)\wedge ∀y({\tt PKF}(y)→x=y)\wedge {\tt Bald}(x))$
+
+現在のフランス王は存在し、かつ、現在のフランス王は多くとも一人であり、かつ、現在のフランス王はハゲである、ことはない。
+このように、「現在のフランス王」を独立して否定するのではなく、命題全体を否定する(スコープの区別する)ことでパズル的な点は解消される。
+
+## C. 同一性言明(フレーゲのパズル)
+このパズルは、指示する対象がその言語の意味(意味の指示説)であり、aとbは同一の対象を指示ならば、a = aとa = bという二つの命題が同一の意味を持つことになる、というものである。例えば、「現在のイギリス女王」(the present queen of England, ${\tt pqe}$)、と「エリザベス2世」(${\tt elizabethII}$)を名前として考えてみる。この場合、次の後者は情報がないが前者にはある。
+- ${\tt elizabethII}  =  {\tt pqe}$
+- ${\tt elizabethII}  =  {\tt elizabethII}$
+
+しかし、これらの名称の意味を指示対象(意味の指示説)とした場合、２つは同一人物($c$とする)を意味することになる。つまり、$V$を名前(定数)を現実の対象に割り当てる関数とした場合、上記2つの同一性言明に差異はないことになる。
+-	$V({\tt elizabethII})  =  c$
+-	$V({\tt pqe})  =  c$
+
+2つはともに同じ意味(c=c)を持つことになる。
+
+#### 記述理論による解決
+フレーゲは「意義」というプラトン的な概念によってこれを説明したが、ラッセルは記述理論で確定記述を含む11を分析する。つまり、上記の「エリザベス2世」は固有名だが、「現在のイギリス女王」は記述であるため下記のように記述理論によって分析できる(`is the present queen of England`を${\tt PQE}$と表す)。
+次のような等式で表せる。
+
+-  ${\tt elizabethII}=\iota x{\tt PQE}(x)$
+
+そして、ラッセルの理論によると確定記述を含む同一性言明は、単純なa = bとならない。
+<!-- つまり、ａ=ｂなどのような単純な同一性言明ではなく、 -->
+次のように、論理式に分析される。
+
+- $∃x({\tt PQE}(x)\wedge ∀y({\tt PQE}(y)→x=y)\wedge x={\tt elizabethII}$)
+
+このように、それは、確定記述は「${\tt elizabethII}$」のような固有名とは異なり独立で直接的に対象を指示していない。
+ラッセルの記述理論は、固有名が直接指示対象を持つのに対して、記述はそれが当てはまる対象(要素)を条件によって`表示(denote)`していることを明確にする。
+
+
+
+<!-- ## 注 -->
+
+<!-- ※１
+「xは存在する」を述語で表現するとExとなるがこのような存在を述語で表現するのは好ましくない。そのため存在量化子に置き換えて∃z(z=x)と定義した場合、「現代のフランス王は存在しない」という命題は、∃x(Kx\wedge ￢∃z(z=x))となる。これから￢∃xKxが導かれる。
+1　(1)　∃x(Kx\wedge ￢∃z(z=x))
+2　(2)　Ka\wedge ￢∃z(z=a)
+2　(3)　Ka
+2　(4)　￢∃z(z=a)
+2　(5)　∀z￢(z=a)
+2　(6)　￢(a=a)
+　　(7)　a=a
+2　(8)　∃xKx
+2　(9)　￢∃xKx
+1　(10)　￢∃xKx	A
+A(for ∃E)
+2\wedge E
+2\wedge E
+4QE
+5∀E
+ = I
+3∃I
+6,7　RAA(8)
+1,9∃E(2) -->
+
+<!-- ※２
+1　　(1)　∃x(H(x)\wedge ∀y(Hy→x=y)\wedge \Box_aNx)
+2　　(2)　∃x(H(x)\wedge ∀y(Hy→x=y)\wedge x=s)
+3　　(3)　Ha\wedge ∀y(Hy→a=y)\wedge \Box_aNa
+3　　(4)　\Box_aNa
+5　　(5)　Hb\wedge ∀y(Hy→b=y)\wedge b=s
+5　　(6)　b=s
+5　　(7)　∀y(Hy→b=y)
+5　　(8)　Ha→b=a
+3　　(9)　Ha
+3,5　(10)　b=a
+3,5　(11)　a=s
+3,5　(12)　\Box_aNs
+2,3　(13)　\Box_aNs
+1,2　(14)　\Box_aNs	A
+A
+A(for ∃E)
+3\wedge E
+A(for ∃E)
+5\wedge E
+5\wedge E
+7∀I
+3\wedge E
+8,9→E
+6,10=E
+4,11=E
+2,12∃E(5)
+1,13∃E(3) -->
+<!-- 
+※３
+この議論はクワインの様相論理批判に対してスマリヤンの反論と似ている。スマリヤンもスコープの区別を導入してクワインに答えるが彼もスコープの区別を指摘するだけでどちらかを強制するような議論を行っていない。
+ -->
+
+ ---
+
+## 参考文献
+- 飯田隆 (著)、『言語哲学大全〈1〉論理と言語』、勁草書房、1987
+- 飯田隆 (著)、『言語哲学大全〈3〉意味と様相 (下)』、   勁草書房、1995
+- 飯田隆 (編集)、『哲学の歴史〈11〉論理・数学・言語』、中央公論新社、2007
+- 竹尾治一郎   (著)、『分析哲学入門』、世界思想社、1999
+- 野本和幸   (著)、『現代の論理的意味論―フレーゲからクリプキまで』、岩波書店、1988
+- 野本和幸ほか (編集)、『言語哲学を学ぶ人のために』、世界思想社、2002
+- ライカン,      W.  G.  (著)・荒磯敏文ほか(翻訳)、『言語哲学―入門から中級まで』、勁草書房、2005
+<!--  -->
+
+<div align="right">
+    First post &nbsp; 2011/03/22
+    <br>
+    Last updated&nbsp;  2011/03/26
+</div>
+<h5> 
+<a href="https://nomuras.github.io/pages/lang/1.html">&lt;&lt; 前へ</a> │
+<a href="https://nomuras.github.io/pages/lang/3.html"> 次へ &gt;&gt;</a> │ 
+<a href="#top">一番上に戻る</a> 
+</h5>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- side-bar -->
+        <div class="columns large-3">
+            <div class="sidebar">
+                <aside class="widget">
+                    <h4 class="widget-title">index</h4>
+                    <ul>
+                        <li>
+                            <a href="../../index.html#cat_kodai">古代哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_tyusei">中世哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_kindai">近代哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_gendai">現代哲学(19-20世紀)</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_fr">現代フランス哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_en">現代イギリス哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_us">現代アメリカ哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_lang">言語哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_science">科学哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_mind">心の哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_epist">認識論・懐疑論</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_east">東洋哲学</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#cat_art">美学・芸術の哲学</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script src="../../static/js/script-wp.js"></script>
+    <script src="../../static/js/script-wp2.js"></script>
+</body>
+<script>
+    // markdown rendering
+    document.getElementById("mdrender").innerHTML = marked(document.getElementById("mdraw").innerHTML);
+</script>
+<script>
+    // popup commnet
+    $(document).ready(function () {
+        for (var i = 0; i < 100; i++) {
+            $('#popup_tyuu' + i).html($('#tyuu' + i).html());
+        };
+        for (var i = 0; i < 100; i++) {
+            $('.popup_cite' + i).html($('.cite' + i).html());
+        };
+    })
+</script>
+
+</html>
+
+
+
+<!-- 
+
+<span class="para"></span>
+    
+
+
+<ul class="book_list">
+    <li>主著</li>
+    <li></li>
+</ul>
+
+
+
+————
+
+<a class="s">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>
+<a class="s">(\*2)<span class="s-balloon" id="popup_tyuu2"></span></a>
+<a class="s">(\*3)<span class="s-balloon" id="popup_tyuu3"></span></a>
+
+<ul class="comments">
+    <li><span id="tyuu1">\*1. texttext </span></li>
+    <li><span id="tyuu2">\*2. texttext </span></li>
+</ul>
+ -->
