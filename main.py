@@ -302,7 +302,7 @@ def trans_en(page_num):
         title= '現代イギリス哲学',
         prev_page= common_html + "/pages/en/%s.html" % (int(page_num)-1),
         next_page= common_html + "/pages/en/%s.html" % (int(page_num)+1),
-        last_page= common_html + "/pages/en/15.html",
+        last_page= common_html + "/pages/en/14.html",
         reference=REFERENCE,
         )
     
