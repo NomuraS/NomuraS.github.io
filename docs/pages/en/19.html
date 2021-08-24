@@ -112,6 +112,118 @@ body{
                     <div id="mdrender"></div>
                     <div id="mdraw" style="display:none;">
                         
+<style>
+/*Now the CSS*/
+* {	
+/*	margin: 0;
+	padding: 0;*/
+}
+ 
+.tree ul {
+    padding-top: 20px; position: relative;
+     
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+ 
+.tree li {
+    float: left; 
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+     
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+ 
+/*We will use ::before and ::after to draw the connectors*/
+ 
+.tree li::before, .tree li::after{
+    content: '';
+    position: absolute; top: 0; right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%; height: 20px;
+}
+.tree li::after{
+    right: auto; left: 50%;
+    border-left: 1px solid #ccc;
+}
+ 
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+ 
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+ 
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+    border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+ 
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0; height: 20px;
+}
+ 
+.tree li a{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+     
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+ 
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+    background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+    border-color:  #94a0b4;
+}
+
+.clear_both{
+	clear:both;
+} 
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+</style>
 
 <h5> 
 <a href="https://nomuras.github.io/pages/en/18.html">&lt;&lt; 前へ</a> │
@@ -150,26 +262,33 @@ body{
 例えば、「独身者は結婚していない者である」はトートロジーであるため必然的に真である。
 なぜならば、「独身者」という述語の意味には「結婚していない者」という意味が“規約”によって含まれているからである<a class="s">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a><a class="s">(\*2)<span class="s-balloon" id="popup_tyuu2"></span></a>。
 
-日常言語は非常に曖昧で多義的であるが、このように、語に与えられる意味を厳密に分析(意味論的分析)することによって命題の真偽の判定をおこなえるという理念に論理実証主義者たちは基づいていた。
+日常言語は非常に曖昧で多義的であるが、論理実証主義者たちは、**語に与えられる意味を厳密に分析(意味論的分析)することによって命題の真偽の判定をおこなえる**という理念(幻想であったが)を持っていた。	
 
-
-<!-- 　　　　　　　　　　　　　　　　命題
-　　　　　　　　┌─────┴───────┐
-　　　　　A有意味(真偽の検証が可能)　　　B無意味(真偽の検証が不可能)
-　　　┌──┴──────────┐　　　　
-C経験で判断可能な命題　　　　Dアプリオリに判断可能な命題
-　(総合的命題)　　　　　　　　　　(分析的命題)　
- -->
 
 ### 哲学の役割(言語批判)
+<div class="tree">
+              <ul>
+                <li><a href="#">命題</a>
+                  <ul>
+                    <li><a href="#">A.有意味(真偽の検証が可能)</a>
+                      <ul>
+                        <li><a href="#">C.経験で判断可能な命題<br>(総合的命題)</a></li>
+                        <li><a href="#">D.アプリオリに判断可能な命題<br>(分析的命題)　</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">B.無意味(真偽の検証が不可能)</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+</div>
 
-科学的命題<br>
-\- (A)真偽の検証が可能 → 有意味<br>
- \-\- (C)経験で判断可能な命題 → 総合的命題<br>
- \-\- (D)アプリオリに判断可能な命題 → 分析的命題<br>
-\- (B)真偽の検証 が不可能 → 無意味<br>
 
-命題の区別する手順として、まず命題を分析することによって、それに含まれる混乱や誤解を除去した理想言語(概念記法、一階述語論理)に還元する。
+
+ <p class="clear_both"></p>
+
+
+命題を区別する手順として、まず命題を分析することによってそれに含まれる混乱や誤解を除去した理想言語(概念記法、一階述語論理)に還元する。
 そして、それが、(C)変装した経験によって判断できる命題であるばらならば総合命題で、(Ｄ)もしそれが変装したトートロジーもしくは矛盾であるならば経験的判断を介さずに無条件に真偽の判定が可能である分析命題となる。
 そして、その何れでもない命題は、(B)検証できない命題であるため無意味な命題として切り捨てられる(この切り捨てるというところがウィトゲンシュタインとは大きく異なる)。
 
@@ -178,7 +297,9 @@ C経験で判断可能な命題　　　　Dアプリオリに判断可能な命
 そして、検証できる命題群において(C)総合判断による真偽の判定は、自然科学の領域においてなされ、経験できない形而上学的命題は排斥される。
 そして、二つ目の(D)分析判断はトートロジーや矛盾によって真偽を判定するため、これは論理学の任務となる。
 そのため、哲学に残された仕事は、判断ではなく命題の分析であり、つまり、言語を明晰化し曖昧性を取り除き、この分析された命題をB,C,Dのいずれかに振り分ける運動・活動であるという。
-これは、ウィトゲンシュタインがいう「すべての哲学は言語の批判である」が意図することであるとウィーン学団は解釈する。
+
+これは、ウィトゲンシュタインがいう「すべての哲学は言語の批判である」が意図することであるとウィーン学団は解釈した結果である。
+ただ、このような論理実証主義者の極端な発想は、ウィトゲンシュタインの『論考』に由来するが、本来、倫理的・神秘的な領域として守りたかった検証不可能な「語り得ぬもの」の領域を無意味として切り捨てるこの哲学運動にウィトゲンシュタインは批判的な態度をとっていた。
 
 
 ### 意味の検証理論
@@ -381,7 +502,7 @@ C経験で判断可能な命題　　　　Dアプリオリに判断可能な命
 
 
 <ul class="book_list">
-    <li>主著</li>
+    <li>著作</li>
     <li></li>
 </ul>
 
