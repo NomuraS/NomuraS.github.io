@@ -1,7 +1,7 @@
 # coding:utf-8
 
 import flask 
-# import datetime
+# import datetime 哲学の歴史
 
 REFERENCE={
 'greek29'       :"Wikipedia. 生命の起源. (最終アクセス 2013/09/03)",#a01
