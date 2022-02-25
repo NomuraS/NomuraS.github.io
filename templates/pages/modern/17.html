@@ -1,10 +1,10 @@
 {% extends "layout.html" %} 
 {% block content %}
 <style>
-/*Now the CSS*/
+|*Now the CSS*|
 * {	
-/*	margin: 0;
-	padding: 0;*/
+|*	margin: 0;
+	padding: 0;*|
 }
  
 .tree ul {
@@ -27,7 +27,7 @@
     -moz-transition: all 0.5s;
 }
  
-/*We will use ::before and ::after to draw the connectors*/
+|*We will use ::before and ::after to draw the connectors*|
  
 .tree li::before, .tree li::after{
     content: '';
@@ -40,21 +40,21 @@
     border-left: 1px solid #ccc;
 }
  
-/*We need to remove left-right connectors from elements without 
-any siblings*/
+|*We need to remove left-right connectors from elements without 
+any siblings*|
 .tree li:only-child::after, .tree li:only-child::before {
     display: none;
 }
  
-/*Remove space from the top of single children*/
+|*Remove space from the top of single children*|
 .tree li:only-child{ padding-top: 0;}
  
-/*Remove left connector from first child and 
-right connector from last child*/
+|*Remove left connector from first child and 
+right connector from last child*|
 .tree li:first-child::before, .tree li:last-child::after{
     border: 0 none;
 }
-/*Adding back the vertical connector to the last nodes*/
+|*Adding back the vertical connector to the last nodes*|
 .tree li:last-child::before{
     border-right: 1px solid #ccc;
     border-radius: 0 5px 0 0;
@@ -67,7 +67,7 @@ right connector from last child*/
     -moz-border-radius: 5px 0 0 0;
 }
  
-/*Time to add downward connectors from parents*/
+|*Time to add downward connectors from parents*|
 .tree ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
@@ -93,12 +93,12 @@ right connector from last child*/
     -moz-transition: all 0.5s;
 }
  
-/*Time for some hover effects*/
-/*We will apply the hover effect the the lineage of the element also*/
+|*Time for some hover effects*|
+|*We will apply the hover effect the the lineage of the element also*|
 .tree li a:hover, .tree li a:hover+ul li a {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
-/*Connector styles on hover*/
+|*Connector styles on hover*|
 .tree li a:hover+ul li::after, 
 .tree li a:hover+ul li::before, 
 .tree li a:hover+ul::before, 
@@ -109,20 +109,20 @@ right connector from last child*/
 .clear_both{
 	clear:both;
 } 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
-</style>
+|*Thats all. I hope you enjoyed it.
+Thanks :)*|
+<|style>
 <h5> 
-<a href="{{prev_page}}">&lt;&lt; 前へ</a> │
-<a href="{{next_page}}"> 次へ &gt;&gt;</a> 
-</h5>
+<a href="{{prev_page}}">&lt;&lt; 前へ<|a> │
+<a href="{{next_page}}"> 次へ &gt;&gt;<|a> 
+<|h5>
 
 
 # カント「純粋理性批判」#1(アプリオリな総合判断) 
 
-<span class="clor-blue">ヒュームの懐疑論の衝撃</span>で「独断のまどろみ」より目を覚ましたカントは、人間理性を批判的に考察し、その射程と限界を明らかにしようとした。つまり、知識が学問的なものであるための条件と、またそのような条件下で「神」や「魂の不死」といった伝統的な形而上学的の概念は学問的と言えるかどうか批判的に見直した。
+<span class="clor-blue">ヒュームの懐疑論の衝撃<|span>で「独断のまどろみ」より目を覚ましたカントは、人間理性を批判的に考察し、その射程と限界を明らかにしようとした。つまり、知識が学問的なものであるための条件と、またそのような条件下で「神」や「魂の不死」といった伝統的な形而上学的の概念は学問的と言えるかどうか批判的に見直した。
 そしてその結果、カントは、経験論と合理論の哲学の二つの支流を合流させ、人間理性のうちに`先験的(アプリオリ:a priori)`(または、`超越論的(transzendental)`と呼ばれる)に備わる認識形式を見出し、それを学問の条件とすることによって、神を土台とする伝統的な形而上学や認識論を破壊するという、哲学史において重大な転機をもたらした。
-カントの哲学は、超越論哲学と呼ばれ、『純粋理性批判』のタイトルからも見て取れるようにまたその傾向ゆえに批判哲学とも呼ばれる <a class="s" style="font-size:15px">(\*1)<span class="s-balloon" id="popup_tyuu1"></span></a>。
+カントの哲学は、超越論哲学と呼ばれ、『純粋理性批判』のタイトルからも見て取れるようにまたその傾向ゆえに批判哲学とも呼ばれる <a class="s" style="font-size:15px">(\*1)<span class="s-balloon" id="popup_tyuu1"><|span><|a>。
 
 ## アプリオリな総合判断(Synthetisches Urteil)
 まずは、学問的な知識の条件の検討である。今までの哲学者は、認識の種類を`アプリオリな分析判断(Analytisches Urteil)`と`アポステリオリな総合判断(Synthetisches Urteil)`のふたつしか認めなかった。前者は、述語が主語にすでに含まれている判断。「独身者は未婚である」といった命題。これは認識を拡張することはなく、同語反復でA=Aという同一率にとどまり、絶対的な真理だがこれによる認識の拡張はありえない。後者は、主語と述語の関係が経験によってもたらされる判断。例えば「水は冷たい」といった命題。これは認識を拡張可能であるが不確実なものにとどまる。
@@ -139,8 +139,8 @@ Thanks :)*/
 ## コペルニクス的転回
 今までの哲学は、客観を主観が受け取ることが認識であると考え、その主客の相互関係を示すことを探求してきたが、それを達成することはできなかった。そこでカントは主観が客観に従っているという立場を逆転させて、客観が主観に従っているとしたのである。カントの言葉によると：
 <blockquote>
-これまでは、我々の認識は全て対象に従わなければならないと想定されていた。しかし対象に関してアプリオリな概念を持って何らかの―それによって我々の認識が拡張されるような―決定をしようとする企ては、このような想定のもとでは全て失敗してしまった。したがって対象が我々の認識に従わなければならないと想定したら、形而上学の問題がもっとうまく解決されはしないかどうか、やってみようではないか。<cite>要引用箇所</cite>
-</blockquote>
+これまでは、我々の認識は全て対象に従わなければならないと想定されていた。しかし対象に関してアプリオリな概念を持って何らかの―それによって我々の認識が拡張されるような―決定をしようとする企ては、このような想定のもとでは全て失敗してしまった。したがって対象が我々の認識に従わなければならないと想定したら、形而上学の問題がもっとうまく解決されはしないかどうか、やってみようではないか。<cite>要引用箇所<|cite>
+<|blockquote>
 
 これを彼は`コペルニクス的転回(Kopernikanische Wende)`という。このように、ある対象を認識するとは主観側のアプリオリな認識様式に従って対象を構成するのだとする。これを超越論的観念論という。
 
@@ -152,41 +152,41 @@ Thanks :)*/
 
 
 <ul>
-	<li>純粋理性批判: 認識(原理、指導的な法則)</li>
-	<li>実践理性批判: 感情(欲求、行為)</li>
-	<li>判断力批判: 意欲(快不快の感情)</li>
-</ul>
+	<li>純粋理性批判: 認識(原理、指導的な法則)<|li>
+	<li>実践理性批判: 感情(欲求、行為)<|li>
+	<li>判断力批判: 意欲(快不快の感情)<|li>
+<|ul>
 
 そして、カント哲学全体を貫く認識論の問題を扱うのが、『純粋理性批判』である。
 
 <div class="tree">
       <ul>
-        <li><a href="#">純粋理性批判<br>認識(原理、指導的な法則)</a>
+        <li><a href="#">純粋理性批判<br>認識(原理、指導的な法則)<|a>
           <ul>
-            <li><a href="#">超越論的原理論</a>
+            <li><a href="#">超越論的原理論<|a>
               <ul>
-                <li><a href="#">(１)超越論的感性論<br>(空間と時間論)</a></li>
-                <li><a href="#">超越論的論理学</a>
+                <li><a href="#">(１)超越論的感性論<br>(空間と時間論)<|a><|li>
+                <li><a href="#">超越論的論理学<|a>
                   <ul>
-                    <li><a href="#">真理の論理学</a>
+                    <li><a href="#">真理の論理学<|a>
                       <ul>
-                        <li><a href="#">(２)超越論的分析論<br>(認識論と因果論)</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">仮象の論理学</a>
+                        <li><a href="#">(２)超越論的分析論<br>(認識論と因果論)<|a><|li>
+                      <|ul>
+                    <|li>
+                    <li><a href="#">仮象の論理学<|a>
                       <ul>
-                        <li><a href="#">(３)超越論的弁証論<br>(道徳論と神学論)</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">超越論的方法論</a></li>
-          </ul>
-        </li>
-      </ul>
-</div>
+                        <li><a href="#">(３)超越論的弁証論<br>(道徳論と神学論)<|a><|li>
+                      <|ul>
+                    <|li>
+                  <|ul>
+                <|li>
+              <|ul>
+            <|li>
+            <li><a href="#">超越論的方法論<|a><|li>
+          <|ul>
+        <|li>
+      <|ul>
+<|div>
 
 <p class="clear_both">
 カントは、人間理性のうちにアプリオリな認識能力が備わっているとしたが、そのアプリオリな原理はなにかという問題を扱う。そして、認識を受動的な認識能力である`感性(Sinnlichkeit)`と能動的な認識能力である`悟性(Verstand)`にわけて、
@@ -197,18 +197,18 @@ Thanks :)*/
 (言い換えれば、(１)と(２)にて新たな形而上学を構成し、それを用いて(３)で伝統的な形而上学を批判する)。
 
 <ul>
-	<li>(感性論)感性(認識能力の受動性)が現象を直観する。ここに時間と空間がアプリオリな形式として存在する</li>
-	<li>(分析論)その直観を悟性(認識能力の能動性)が思惟することによって認識にいたる</li>
-</ul>
+	<li>(感性論)感性(認識能力の受動性)が現象を直観する。ここに時間と空間がアプリオリな形式として存在する<|li>
+	<li>(分析論)その直観を悟性(認識能力の能動性)が思惟することによって認識にいたる<|li>
+<|ul>
 
-</p>
+<|p>
 
 ---
 
 ## 注
 <span id="tyuu1">\*1
 カントの「批判」とは単に対象の欠点を見いだして否定するという意味ではなく、対象が成立している根本を見出して、これを明晰化して妥当範囲を見出すことによって、対象が主張することの有効な範囲を見定めるという意味を持つ。
-</span>
+<|span>
 
 
 ---
@@ -229,11 +229,11 @@ Thanks :)*/
 <!--  -->
 
 <div align="right">
-    First post &nbsp; 2008/10/19<br>Last updated&nbsp; 2010/11/11
-</div>
+    First post &nbsp; 2008|10|19<br>Last updated&nbsp; 2010|11|11
+<|div>
 <h5> 
-<a href="{{prev_page}}">&lt;&lt; 前へ</a> │
-<a href="{{next_page}}"> 次へ &gt;&gt;</a> │ 
-<a href="#top">一番上に戻る</a> 
-</h5>
+<a href="{{prev_page}}">&lt;&lt; 前へ<|a> │
+<a href="{{next_page}}"> 次へ &gt;&gt;<|a> │ 
+<a href="#top">一番上に戻る<|a> 
+<|h5>
 {% endblock %}

@@ -2,10 +2,10 @@
 {% block content %}
 
 <style>
-/*Now the CSS*/
+|*Now the CSS*|
 * {	
-/*	margin: 0;
-	padding: 0;*/
+|*	margin: 0;
+	padding: 0;*|
 }
  
 .tree ul {
@@ -28,7 +28,7 @@
     -moz-transition: all 0.5s;
 }
  
-/*We will use ::before and ::after to draw the connectors*/
+|*We will use ::before and ::after to draw the connectors*|
  
 .tree li::before, .tree li::after{
     content: '';
@@ -41,21 +41,21 @@
     border-left: 1px solid #ccc;
 }
  
-/*We need to remove left-right connectors from elements without 
-any siblings*/
+|*We need to remove left-right connectors from elements without 
+any siblings*|
 .tree li:only-child::after, .tree li:only-child::before {
     display: none;
 }
  
-/*Remove space from the top of single children*/
+|*Remove space from the top of single children*|
 .tree li:only-child{ padding-top: 0;}
  
-/*Remove left connector from first child and 
-right connector from last child*/
+|*Remove left connector from first child and 
+right connector from last child*|
 .tree li:first-child::before, .tree li:last-child::after{
     border: 0 none;
 }
-/*Adding back the vertical connector to the last nodes*/
+|*Adding back the vertical connector to the last nodes*|
 .tree li:last-child::before{
     border-right: 1px solid #ccc;
     border-radius: 0 5px 0 0;
@@ -68,7 +68,7 @@ right connector from last child*/
     -moz-border-radius: 5px 0 0 0;
 }
  
-/*Time to add downward connectors from parents*/
+|*Time to add downward connectors from parents*|
 .tree ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
@@ -94,12 +94,12 @@ right connector from last child*/
     -moz-transition: all 0.5s;
 }
  
-/*Time for some hover effects*/
-/*We will apply the hover effect the the lineage of the element also*/
+|*Time for some hover effects*|
+|*We will apply the hover effect the the lineage of the element also*|
 .tree li a:hover, .tree li a:hover+ul li a {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
-/*Connector styles on hover*/
+|*Connector styles on hover*|
 .tree li a:hover+ul li::after, 
 .tree li a:hover+ul li::before, 
 .tree li a:hover+ul::before, 
@@ -110,13 +110,13 @@ right connector from last child*/
 .clear_both{
 	clear:both;
 } 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
-</style>
+|*Thats all. I hope you enjoyed it.
+Thanks :)*|
+<|style>
 <h5> 
-<a href="{{prev_page}}">&lt;&lt; 前へ</a> │
-<a href="{{next_page}}"> 次へ &gt;&gt;</a> 
-</h5>
+<a href="{{prev_page}}">&lt;&lt; 前へ<|a> │
+<a href="{{next_page}}"> 次へ &gt;&gt;<|a> 
+<|h5>
 
 # カント「判断力批判」#3 美的判断の演繹論
 ## 演繹論における芸術論
@@ -128,22 +128,22 @@ Thanks :)*/
 
 <div class="tree">
       <ul>
-        <li><a href="#">技術(Kunst)</a>
+        <li><a href="#">技術(Kunst)<|a>
           <ul>
-            <li><a href="#">機械的技術(技術)</a></li>
-            <li><a href="#">美的技術</a>
+            <li><a href="#">機械的技術(技術)<|a><|li>
+            <li><a href="#">美的技術<|a>
 <ul>
-<li><a href="#">快適な技術</a></li>
-<li><a href="#">美しい技術(芸術)</a></li>
-</ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-</div>
+<li><a href="#">快適な技術<|a><|li>
+<li><a href="#">美しい技術(芸術)<|a><|li>
+<|ul>
+            <|li>
+          <|ul>
+        <|li>
+      <|ul>
+<|div>
 
 
-<p class="clear_both"></p>
+<p class="clear_both"><|p>
 
 ### 芸術美に対する自然美の優位性
 カントは常に自然美を芸術美よりも優れたものと考えている。なぜなら、自然美は関心を前提としないが、芸術美(人為的な美)は社交性と結びついており、社会や集団の中でのみ精錬されるため、間接的に関心(他人とある対象にたいする満足を共有するという関心？)を伴っている。そしてまた、芸術美は虚栄心に充ちた、我儘勝手で、堕落した感情がつきまといやすいため(例えば、欲情をかきたてる裸婦画)、道徳的関心と結びつかない。これに対して、自然美にはこのような社交性という外的な要因が付随しない。そのため、この美は対象それ自体が快をもたらす純粋に無関心なものである。そのため、これにに対する関心は、直接的な関心であるといえる。そして、この直接的な関心をもつことは常に「善い魂」の表れである。
@@ -158,8 +158,8 @@ Xそれ自体が快をもたらすためXを求める。
 ## 美と道徳
 カントは、自然美に関心を有する人は善い道徳的心情への素質があると推定すべき理由がある、という。なぜなら、純粋な趣味判断と道徳的判断の間には類似性があるためである。例えば、自然は美しい産物の点において偶然ではなく合目的性を有しているようにみえる。その目的はいかなる外部においても見出すことはできないが、そのため、その目的を我々自身の内部に求める。そして、自然に見出す合目的性はそれが実際に存在するのであれば、それをもたらした存在は神といった最高原因である。そのため、自然の内に合目的性を見出すことによって宗教的、道徳的な感情を持つのである。そのため、趣味判断は道徳的感情へと移行する。(ここらへんはよく理解できなかった。渡邊氏の解説をそのまま載せる。)
 <blockquote>
-自然と道徳(人間・歴史)とが相互に調和し、両者が目的論的に調和宥和し、善が完成するという、道徳的神学的な目的論的世界観を、カントは抱懐していたのである。だからこそ、理性的な善なる意思の所有者たる「善い・美しい魂」は、理念が客観的実在性を持つことに関心をいだき、自然のうちにはその産物が私たちの喜悦と合致し道徳的関心と結びつきうるような痕跡ないし暗示があるはずだと考え、こうして自然美を尊ぶというわけである。だからこそ自然美への関心と道徳的心情は結びつくのであった。<cite>[4, p.386] </cite>
-</blockquote>
+自然と道徳(人間・歴史)とが相互に調和し、両者が目的論的に調和宥和し、善が完成するという、道徳的神学的な目的論的世界観を、カントは抱懐していたのである。だからこそ、理性的な善なる意思の所有者たる「善い・美しい魂」は、理念が客観的実在性を持つことに関心をいだき、自然のうちにはその産物が私たちの喜悦と合致し道徳的関心と結びつきうるような痕跡ないし暗示があるはずだと考え、こうして自然美を尊ぶというわけである。だからこそ自然美への関心と道徳的心情は結びつくのであった。<cite>[4, p.386] <|cite>
+<|blockquote>
 
 ## 天才について
 趣味判断の場合には、それは美を受動的に享受するだけであるが、美(すなわち芸術作品)を創造するときには、この受動的な能力ではなにも生み出すことはできない。カントはここにおいて能動的な能力である`天才(Genie)`を想定する。天才は独創性の能力である。従って、自然美と芸術美の対立は、趣味と天才の対立と繋がっている。
@@ -185,11 +185,11 @@ Xそれ自体が快をもたらすためXを求める。
 <!--  -->
 
 <div align="right">
-    First post &nbsp; 2010/11/11<br>Last updated&nbsp; 2010/11/11
-</div>
+    First post &nbsp; 2010|11|11<br>Last updated&nbsp; 2010|11|11
+<|div>
 <h5> 
-<a href="{{prev_page}}">&lt;&lt; 前へ</a> │
-<a href="{{next_page}}"> 次へ &gt;&gt;</a> │ 
-<a href="#top">一番上に戻る</a> 
-</h5>
+<a href="{{prev_page}}">&lt;&lt; 前へ<|a> │
+<a href="{{next_page}}"> 次へ &gt;&gt;<|a> │ 
+<a href="#top">一番上に戻る<|a> 
+<|h5>
 {% endblock %}

@@ -2,10 +2,10 @@
 {% block content %}
 
 <style>
-/*Now the CSS*/
+|*Now the CSS*|
 * {	
-/*	margin: 0;
-	padding: 0;*/
+|*	margin: 0;
+	padding: 0;*|
 }
  
 .tree ul {
@@ -28,7 +28,7 @@
     -moz-transition: all 0.5s;
 }
  
-/*We will use ::before and ::after to draw the connectors*/
+|*We will use ::before and ::after to draw the connectors*|
  
 .tree li::before, .tree li::after{
     content: '';
@@ -41,21 +41,21 @@
     border-left: 1px solid #ccc;
 }
  
-/*We need to remove left-right connectors from elements without 
-any siblings*/
+|*We need to remove left-right connectors from elements without 
+any siblings*|
 .tree li:only-child::after, .tree li:only-child::before {
     display: none;
 }
  
-/*Remove space from the top of single children*/
+|*Remove space from the top of single children*|
 .tree li:only-child{ padding-top: 0;}
  
-/*Remove left connector from first child and 
-right connector from last child*/
+|*Remove left connector from first child and 
+right connector from last child*|
 .tree li:first-child::before, .tree li:last-child::after{
     border: 0 none;
 }
-/*Adding back the vertical connector to the last nodes*/
+|*Adding back the vertical connector to the last nodes*|
 .tree li:last-child::before{
     border-right: 1px solid #ccc;
     border-radius: 0 5px 0 0;
@@ -68,7 +68,7 @@ right connector from last child*/
     -moz-border-radius: 5px 0 0 0;
 }
  
-/*Time to add downward connectors from parents*/
+|*Time to add downward connectors from parents*|
 .tree ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
@@ -94,12 +94,12 @@ right connector from last child*/
     -moz-transition: all 0.5s;
 }
  
-/*Time for some hover effects*/
-/*We will apply the hover effect the the lineage of the element also*/
+|*Time for some hover effects*|
+|*We will apply the hover effect the the lineage of the element also*|
 .tree li a:hover, .tree li a:hover+ul li a {
     background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
 }
-/*Connector styles on hover*/
+|*Connector styles on hover*|
 .tree li a:hover+ul li::after, 
 .tree li a:hover+ul li::before, 
 .tree li a:hover+ul::before, 
@@ -110,13 +110,13 @@ right connector from last child*/
 .clear_both{
 	clear:both;
 } 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
-</style>
+|*Thats all. I hope you enjoyed it.
+Thanks :)*|
+<|style>
 <h5> 
-<a href="{{prev_page}}">&lt;&lt; 前へ</a> │
-<a href="{{next_page}}"> 次へ &gt;&gt;</a> 
-</h5>
+<a href="{{prev_page}}">&lt;&lt; 前へ<|a> │
+<a href="{{next_page}}"> 次へ &gt;&gt;<|a> 
+<|h5>
 
 # カント「判断力批判」#1 第三批判の全体図
 ## 判断力批判(Kritik der Urteilskraft)
@@ -138,35 +138,35 @@ Thanks :)*/
 
 <div class="tree">
       <ul>
-        <li><a href="#">判断力批判<br>意欲(快・不快の感情)</a>
+        <li><a href="#">判断力批判<br>意欲(快・不快の感情)<|a>
           <ul>
-            <li><a href="#">第一部： 美的判断力の批判<br>(主観的合目的性の考察)</a>
+            <li><a href="#">第一部： 美的判断力の批判<br>(主観的合目的性の考察)<|a>
               <ul>
-                <li><a href="#">分析論</a>
+                <li><a href="#">分析論<|a>
                   <ul>
-                    <li><a href="#">美の分析論</a></li>
-                    <li><a href="#">崇高の分析論</a></li>
-                  </ul>
-                <li><a href="#">弁証論</a></li>
-                                </li>
+                    <li><a href="#">美の分析論<|a><|li>
+                    <li><a href="#">崇高の分析論<|a><|li>
+                  <|ul>
+                <li><a href="#">弁証論<|a><|li>
+                                <|li>
                 <li><a href="#">演繹論
                 	<br>共同感覚について
                 	<br>芸術について
                 	<br>天才について
                 	<br>芸術のジャンルについて
-                </a></li>
-              </ul>
-            </li>
-            <li><a href="#">第二部：目的論的判断力の批判<br>(客観的合目的性の考察)</a>
+                <|a><|li>
+              <|ul>
+            <|li>
+            <li><a href="#">第二部：目的論的判断力の批判<br>(客観的合目的性の考察)<|a>
 <ul>
-<li><a href="#">分析論</a></li>
-<li><a href="#">弁証論</a></li>
-</ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-</div>
+<li><a href="#">分析論<|a><|li>
+<li><a href="#">弁証論<|a><|li>
+<|ul>
+            <|li>
+          <|ul>
+        <|li>
+      <|ul>
+<|div>
 
 
 
@@ -184,11 +184,11 @@ Thanks :)*/
 <!--  -->
 
 <div align="right">
-    First post &nbsp; 2010/11/11<br>Last updated&nbsp; 2010/11/18
-</div>
+    First post &nbsp; 2010|11|11<br>Last updated&nbsp; 2010|11|18
+<|div>
 <h5> 
-<a href="{{prev_page}}">&lt;&lt; 前へ</a> │
-<a href="{{next_page}}"> 次へ &gt;&gt;</a> │ 
-<a href="#top">一番上に戻る</a> 
-</h5>
+<a href="{{prev_page}}">&lt;&lt; 前へ<|a> │
+<a href="{{next_page}}"> 次へ &gt;&gt;<|a> │ 
+<a href="#top">一番上に戻る<|a> 
+<|h5>
 {% endblock %}
