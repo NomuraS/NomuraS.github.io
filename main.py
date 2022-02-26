@@ -172,7 +172,7 @@ REFERENCE={
 'hist14'        :"山内勝利   (編集)、『哲学の歴史〈2〉帝国と賢者』、中央公論新社、2007",#159
 'hist13'        :"山内勝利   (編集)、『哲学の歴史〈1〉哲学誕生』、中央公論新社、2008",#160
 'greek22'       :"山内勝利   (編集)、『ソクラテス以前哲学者断片集』、岩波書店、2008",#161
-'greek23'       :"山口義久   (著)、『アリストテレス入門  』、筑摩書房、2001",#162
+'greek23'       :"山口義久   (著)、『アリストテレス入門』、筑摩書房、2001",#162
 'greek24'       :"山口義久   (著)、『アリストテレス入門』、筑摩書房、2001",#163
 'ana17'         :"山崎正一   (著)、『講座現代の哲学〈3〉プラグマティズム』、有斐閣、1958",#164
 'fr4'           :"吉田禎吾ほか (著)、『レヴィ・ストロース  (Century    Books―人と思想)』、清水書院、1991",#165
@@ -187,7 +187,14 @@ REFERENCE={
 'other7'        :"渡辺二郎   (著)、『芸術の哲学』、筑摩書房、1998",#173
 'add1'          :"ディオゲネス・ラエルティオス(著)・加来彰俊 (翻訳)、『ギリシア哲学者列伝（上）』、岩波書店、1984",
 'add2'          :"ウィトゲンシュタイン(著)・野矢茂樹 (翻訳)、『論理哲学論考』、岩波文庫、2003",
+'ryu1'          :"J. Garfield. The Fundamental Wisdom of the Middle Way. Oxford University Press, 1995",
+'ryu2'          : "G. Priest. The logic of the catuskoti. Comparative Philosophy, 1:24-54, 2010",
+'ryu3'          : "M. Siderits. Thinking on empty: Madhyamaka anti-realism and canons of rationality. Rationality in Question: on Eastern and Western Views of Rationality, pages 231-249, 1989",
+'ryu4'          : "立川武蔵 (著)、『空の構造』、レグルス文庫、1986",
+'ryu5'          : "立川武蔵 (著)、『空の思想史』、講談社学術文庫、2003",
+'ryu6'          : "瓜生津隆真 (著)、『龍樹―空の論理と菩薩の道』、大法輪閣、2004",
 }
+# indo1[4] 中村元. 龍樹. 講談社学術文庫, 2002.
 
 app = flask.Flask(__name__)
 
