@@ -383,16 +383,16 @@ $p$と$q$という二つの要素命題がもつ真理条件群の一覧表は5.
 
 
 
-//　　　Wの記法　　　/　　論理式の例///　　　Wの記法　　　/　　論理式の例/
-/--/--/
-/(1)/(TTTT)($p, q$)/$　　　(p\to p)\vee (q\to q)$//(9)/(TFFT)($p, q$)/$　　　p\leftrightarrow q$/
-/(2)/(FTTT)($p, q$)/$　　　\neg (p\wedge q)$//(10)/(TFTF)($p, q$)/$　　　p$/
-/(3)/(TFTT)($p, q$)/$　　　q\to p$//(11)/(TTFF)($p, q$)/$　　　q$/
-/(4)/(TTFT)($p, q$)/$　　　p\to q$//(12)/(FFFT)($p, q$)/$　　　\neg p\wedge \neg q$/
-/(5)/(TTTF)($p, q$)/$　　　p\vee q$//(13)/(FFTF)($p, q$)/$　　　p\wedge \neg q$/
-/(6)/(FFTT)($p, q$)/$　　　\neg p$//(14)/(FTFF)($p, q$)/$　　　q\wedge \neg p$/
-/(7)/(FTFT)($p, q$)/$　　　\neg q$//(15)/(TFFF)($p, q$)/$　　　q\wedge p$/
-/(8)/(FTTF)($p, q$)/$　(p\wedge \neg q)\vee (q\wedge \neg p)$//(16)/(FFFF)($p, q$)/$　(p\wedge \neg p)\wedge (q\wedge \neg q)$/
+||　　　Wの記法　　　|　　論理式の例|||　　　Wの記法　　　|　　論理式の例|
+|--|--|
+|(1)|(TTTT)($p, q$)|$　　　(p\to p)\vee (q\to q)$||(9)|(TFFT)($p, q$)|$　　　p\leftrightarrow q$|
+|(2)|(FTTT)($p, q$)|$　　　\neg (p\wedge q)$||(10)|(TFTF)($p, q$)|$　　　p$|
+|(3)|(TFTT)($p, q$)|$　　　q\to p$||(11)|(TTFF)($p, q$)|$　　　q$|
+|(4)|(TTFT)($p, q$)|$　　　p\to q$||(12)|(FFFT)($p, q$)|$　　　\neg p\wedge \neg q$|
+|(5)|(TTTF)($p, q$)|$　　　p\vee q$||(13)|(FFTF)($p, q$)|$　　　p\wedge \neg q$|
+|(6)|(FFTT)($p, q$)|$　　　\neg p$||(14)|(FTFF)($p, q$)|$　　　q\wedge \neg p$|
+|(7)|(FTFT)($p, q$)|$　　　\neg q$||(15)|(TFFF)($p, q$)|$　　　q\wedge p$|
+|(8)|(FTTF)($p, q$)|$　(p\wedge \neg q)\vee (q\wedge \neg p)$||(16)|(FFFF)($p, q$)|$　(p\wedge \neg p)\wedge (q\wedge \neg q)$|
 
 この表が$p$と$q$から構成することができる有意味な命題のすべてである。
 (古典命題論理の)二つの要素命題からなる命題はすべてこのいずれかと同一の真理条件をもちそれに還元することができる。
@@ -470,19 +470,19 @@ N(\xi)::=
 $$
 
 
-/fig. 1/
-/--/--/--/--/--/--/--/
-/$A\wedge B$/$\leftrightarrow$ /$\neg\neg A\wedge\neg\neg B$/$\leftrightarrow$ /$N(\neg A,\neg B)$/$\leftrightarrow$/$N(N(A) ,N(B) )$/
-/$A\vee B$/$\leftrightarrow$  /$\neg(\neg A\wedge \neg B)$/$\leftrightarrow$ /$N(\neg A\wedge \neg B)$/$\leftrightarrow$/$ N( N(A, B))$/
-/$A\to B$/$\leftrightarrow$  /$\neg(\neg \neg A\wedge \neg B)$/$\leftrightarrow$ /$N(\neg\neg  A\wedge \neg B)$/$\leftrightarrow$/$N( N( N(A), B))$
+|fig. 1|
+|--|--|--|--|--|--|--|
+|$A\wedge B$|$\leftrightarrow$ |$\neg\neg A\wedge\neg\neg B$|$\leftrightarrow$ |$N(\neg A,\neg B)$|$\leftrightarrow$|$N(N(A) ,N(B) )$|
+|$A\vee B$|$\leftrightarrow$  |$\neg(\neg A\wedge \neg B)$|$\leftrightarrow$ |$N(\neg A\wedge \neg B)$|$\leftrightarrow$|$ N( N(A, B))$|
+|$A\to B$|$\leftrightarrow$  |$\neg(\neg \neg A\wedge \neg B)$|$\leftrightarrow$ |$N(\neg\neg  A\wedge \neg B)$|$\leftrightarrow$|$N( N( N(A), B))$
 
 
 
  この、操作$N(\xi)$は量化で無限にまで拡大した要素命題とそれが生み出す論理空間に対しても適用可能である。
-例えば、存在を表す量子記号$(\exists x)fx$ (ただし、$x\in \lbrace a,b,c,\cdots\rbrace $)は、直感的に$(fa\vee fb\vee fc\vee  \cdots)$と同値である。
-そして、「$A \vee B$」は、$N(N(A, B ))$で表現できるので、$(\exists x)fx$は、$N(N(fa, fb, fc,  \cdots))$と表現できる。
-他方、一般量化子$(\forall x)fx$は、$(fa\wedge fb\wedge fc\wedge  \cdots)$を意味する。
-そして、$(\forall x)fx$は、$N(N(fa), N(fb),N(fc), \cdots)$と表現できる<a class="s">(\*4)<span class="s-balloon" id="popup_tyuu4"></span></a>。
+例えば、存在を表す量子記号$(\exists x)F(x)$ (ただし、$x\in \lbrace a,b,c,\cdots\rbrace $)は、直感的に$(F(a)\vee F(b)\vee F(c)\vee  \cdots)$と同値である。
+そして、「$A \vee B$」は、$N(N(A, B ))$で表現できるので、$(\exists x)F(x)$は、$N(N(F(a), F(b), F(c),  \cdots))$と表現できる。
+他方、一般量化子$(\forall x)F(x)$は、$(F(a)\wedge F(b)\wedge F(c)\wedge  \cdots)$を直感的に意味する。
+そして、$(\forall x)F(x)$は、$N(N(F(a)), N(F(b)),N(F(c)), \cdots)$と表現できる<a class="s">(\*4)<span class="s-balloon" id="popup_tyuu4"></span></a>。
 <!-- 全称量子記号の表現において操作Nが無限に使用されているが、この使用に関しては、フォジランによると、修正は容易で大した問題ではないという[12, p.169]。 -->
 
 <!-- 
