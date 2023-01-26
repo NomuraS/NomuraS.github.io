@@ -9,5 +9,8 @@ app.config["FREEZER_RELATIVE_URLS"] = True
 
 if __name__ == "__main__":
     freezer.freeze()
-    shutil.rmtree("./docs/")
+    try:
+        shutil.rmtree("./docs/")
+    except:
+        print("no build file")
     os.rename("./build", "./docs")
