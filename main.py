@@ -186,7 +186,7 @@ def trans_epistemology(page_num):
 
 
 # logic
-# @app.route("/logic/<page_num>.html", methods=["GET"])
+# @app.route ("/logic/<page_num>.html", methods=["GET"])
 # def trans_logic(page_num):
 #     return flask.render_template(
 #         "/logic/" + page_num + ".html",
