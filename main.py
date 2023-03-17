@@ -14,9 +14,9 @@ def index():
     return flask.render_template("index.html", title="")
 
 
-@app.route("/")
+@app.route("/about.html")
 def about():
-    return flask.render_template("/about.html", title="about")
+    return flask.render_template("about.html", title="about")
 
 
 # @app.route('/<page_num>.html', methods=['GET'])
@@ -183,18 +183,6 @@ def trans_epistemology(page_num):
         next_page=common_html + "/epistemology/%s.html" % (int(page_num) + 1),
         reference=r.REFERENCE,
     )
-
-
-# logic
-# @app.route ("/logic/<page_num>.html", methods=["GET"])
-# def trans_logic(page_num):
-#     return flask.render_template(
-#         "/logic/" + page_num + ".html",
-#         title="論理学",
-#         prev_page=common_html + "/logic/medieval/%s.html" % (int(page_num) - 1),
-#         next_page=common_html + "/logic/medieval/%s.html" % (int(page_num) + 1),
-#         reference=r.REFERENCE,
-#     )
 
 
 # east
