@@ -1,7 +1,9 @@
-from flask_frozen import Freezer
-from main import app
-import shutil
 import os
+import shutil
+
+from flask_frozen import Freezer
+
+from app import app
 
 freezer = Freezer(app)
 

@@ -1,6 +1,7 @@
 # coding:utf-8
 
 import flask
+
 import references as r
 
 app = flask.Flask(__name__)
@@ -17,14 +18,6 @@ def index():
 @app.route("/about.html")
 def about():
     return flask.render_template("about.html", title="about")
-
-
-# @app.route('/<page_num>.html', methods=['GET'])
-# def trans_page(page_num):
-#     return flask.render_template(
-#         '/'+page_num+'.html',
-#         page_num=page_num,
-#         )
 
 
 # ancient
@@ -97,6 +90,7 @@ def trans_phenomenology(page_num):
 #         next_page= common_html + "/existential/%s.html" % (int(page_num)+1),
 #         reference=r.REFERENCE,
 #         )
+
 
 # fr
 @app.route("/fr/<page_num>.html", methods=["GET"])
