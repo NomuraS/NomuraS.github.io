@@ -1,4 +1,11 @@
 {
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#4ce6e3",
         "activityBar.background": "#4ce6e3",

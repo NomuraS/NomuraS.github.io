@@ -19,14 +19,6 @@ def about():
     return flask.render_template("about.html", title="about")
 
 
-# @app.route('/<page_num>.html', methods=['GET'])
-# def trans_page(page_num):
-#     return flask.render_template(
-#         '/'+page_num+'.html',
-#         page_num=page_num,
-#         )
-
-
 # ancient
 @app.route("/ancient/<page_num>.html", methods=["GET"])
 def trans_ancient(page_num):
@@ -86,17 +78,6 @@ def trans_phenomenology(page_num):
         reference=r.REFERENCE,
     )
 
-
-# # existential
-# @app.route('/existential/<page_num>.html', methods=['GET'])
-# def trans_existential(page_num):
-#     return flask.render_template(
-#         '/existential/'+page_num+'.html',
-#         title= '実存主義',
-#         prev_page= common_html + "/existential/%s.html" % (int(page_num)-1),
-#         next_page= common_html + "/existential/%s.html" % (int(page_num)+1),
-#         reference=r.REFERENCE,
-#         )
 
 # fr
 @app.route("/fr/<page_num>.html", methods=["GET"])
