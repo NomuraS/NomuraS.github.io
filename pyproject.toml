@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 flask = "^3.0.0"
-frozen-flask = "^1.0.1"
+frozen-flask = "^1.0.2"
 ruff = "^0.5.7"
 mypy = "^1.11.1"
 
